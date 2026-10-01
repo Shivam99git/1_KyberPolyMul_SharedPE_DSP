@@ -1,0 +1,40 @@
+{
+  "per_phase_baseline": {
+    "analytical_total": 27269,
+    "c": 3,
+    "difference": 0,
+    "issues_analytical": 3584,
+    "rtl_mult_issues": 3584,
+    "rtl_total": 27269,
+    "status": "PASS"
+  },
+  "pipelined_barrett": {
+    "analytical_total": 30853,
+    "c": 4,
+    "difference": 0,
+    "issues_analytical": 3584,
+    "rtl_mult_issues": 3584,
+    "rtl_total": 30853,
+    "status": "PASS"
+  },
+  "python_model": {
+    "cycles_before_done_state": 27268,
+    "equals_analytical": true,
+    "issues": 3584,
+    "total": 27269
+  },
+  "shared_pe": {
+    "analytical_total": 27269,
+    "c": 3,
+    "difference": 0,
+    "issues_analytical": 3584,
+    "rtl_mult_issues": 3584,
+    "rtl_total": 27269,
+    "status": "PASS"
+  },
+  "tvla_transition_samples": {
+    "execution_cycles": 27269,
+    "explanation": "N_cyc = 27,269 counts the clock cycles in which the FSM is not idle: 27,268 cycles before it enters S_DONE plus the S_DONE cycle that raises the done flag. The Hamming-distance trace has one sample per clock edge from the first edge after the start-capturing edge up to the edge that enters S_DONE, i.e. 27,268 consecutive transition samples (the first is taken against the pre-launch reset snapshot). The S_DONE cycle is not sampled: it changes only the 1-bit done flag, whose toggle is input independent.",
+    "samples": 27268
+  }
+}

@@ -1,0 +1,19 @@
+design,phase,runs,states_per_run,wait_states_per_run,multiplier_issues,wait_length_c,analytical_cycles,rtl_cycles,difference
+shared_pe,Forward NTT (x2),1792,6,1,1792,3,14336,14336,0
+shared_pe,Pointwise multiplication,128,14,5,640,3,3072,3072,0
+shared_pe,Inverse NTT,896,7,1,896,3,8064,8064,0
+shared_pe,Final scaling,256,5,1,256,3,1792,1792,0
+shared_pe,Phase init/done,5,1,0,0,3,5,5,0
+shared_pe,TOTAL,,,,3584,3,27269,27269,0
+per_phase_baseline,Forward NTT (x2),1792,6,1,1792,3,14336,14336,0
+per_phase_baseline,Pointwise multiplication,128,14,5,640,3,3072,3072,0
+per_phase_baseline,Inverse NTT,896,7,1,896,3,8064,8064,0
+per_phase_baseline,Final scaling,256,5,1,256,3,1792,1792,0
+per_phase_baseline,Phase init/done,5,1,0,0,3,5,5,0
+per_phase_baseline,TOTAL,,,,3584,3,27269,27269,0
+pipelined_barrett,Forward NTT (x2),1792,6,1,1792,4,16128,16128,0
+pipelined_barrett,Pointwise multiplication,128,14,5,640,4,3712,3712,0
+pipelined_barrett,Inverse NTT,896,7,1,896,4,8960,8960,0
+pipelined_barrett,Final scaling,256,5,1,256,4,2048,2048,0
+pipelined_barrett,Phase init/done,5,1,0,0,4,5,5,0
+pipelined_barrett,TOTAL,,,,3584,4,30853,30853,0

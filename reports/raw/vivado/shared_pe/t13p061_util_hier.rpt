@@ -1,0 +1,36 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu Oct  1 17:34:30 2026
+| Host         : <redacted> running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_utilization -hierarchical -file {<repo>/reports/generated/shared_pe/t13p061_util_hier.rpt}
+| Design       : ntt_core_shared
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------+--------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|       Instance      |       Module       | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++---------------------+--------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| ntt_core_shared     |              (top) |        907 |        651 |     256 |    0 | 357 |      0 |      0 |          3 |
+|   (ntt_core_shared) |              (top) |        706 |        450 |     256 |    0 | 319 |      0 |      0 |          0 |
+|   u_add             |            mod_add |         85 |         85 |       0 |    0 |   0 |      0 |      0 |          0 |
+|   u_mult            |          mult_unit |         70 |         70 |       0 |    0 |  38 |      0 |      0 |          3 |
+|     u_mult          |  mult_conventional |         70 |         70 |       0 |    0 |  38 |      0 |      0 |          3 |
+|       (u_mult)      |  mult_conventional |         21 |         21 |       0 |    0 |  14 |      0 |      0 |          1 |
+|       u_barrett     | mod_reduce_barrett |         49 |         49 |       0 |    0 |  24 |      0 |      0 |          2 |
+|   u_sub             |            mod_sub |         49 |         49 |       0 |    0 |   0 |      0 |      0 |          0 |
++---------------------+--------------------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

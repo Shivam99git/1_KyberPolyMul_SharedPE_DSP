@@ -1,0 +1,157 @@
+{
+  "command_line_arguments": "--quick",
+  "environment": {
+    "fpga_part": "xc7a35tcpg236-1",
+    "git_commit": "unavailable (not a git checkout)",
+    "matplotlib": "3.6.3",
+    "numpy": "1.26.4",
+    "os": "Linux 7.0.0",
+    "platform": "Linux x86_64",
+    "python": "3.12.3",
+    "scipy": "1.11.4",
+    "vivado": "not found",
+    "xsim": "not found"
+  },
+  "fpga_part": "xc7a35tcpg236-1",
+  "generated_utc": "2026-10-01T12:53:21Z",
+  "manuscript_tool_version": "Vivado 2024.2",
+  "mode": "quick",
+  "seeds": {
+    "masking_model": {
+      "mask_seeds": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004
+      ],
+      "operand_seed": 2024
+    },
+    "shuffling_lfsr_seeds": [
+      "0xACE12345",
+      "0x00000001",
+      "0xFFFFFFFF",
+      "0xDEADBEEF",
+      "0x5A5A5A5A",
+      "0x13579BDF"
+    ],
+    "shuffling_model": {
+      "vector_seed": 31337
+    },
+    "test_vectors": {
+      "corner_case_random_polynomial": 999,
+      "directed_example": 42,
+      "masking_f1": 1296126795,
+      "random_pairs": 777
+    },
+    "tvla": {
+      "fixed_secret": 20260922,
+      "group_seeds": {
+        "fix": 1001,
+        "null_a": 3003,
+        "null_b": 4004,
+        "rand": 2002
+      },
+      "multi_group_base": 8000,
+      "multi_secret_base": 7000
+    }
+  },
+  "stages": [
+    {
+      "evidence": "local",
+      "name": "Environment check",
+      "note": "",
+      "seconds": 0.0,
+      "stage": 1,
+      "status": "PASS"
+    },
+    {
+      "evidence": "regenerated (python)",
+      "name": "Functional/reference-model verification",
+      "note": "",
+      "seconds": 4.0,
+      "stage": 2,
+      "status": "PASS"
+    },
+    {
+      "evidence": "not run + python",
+      "name": "Barrett exhaustive verification",
+      "note": "RTL simulation (barrett): required tool unavailable (xvlog/xsim not in PATH); use --from-reports or install Vivado 2024.2",
+      "seconds": 1.0,
+      "stage": 3,
+      "status": "PASS"
+    },
+    {
+      "evidence": "not run",
+      "name": "RTL simulation and cycle-count verification",
+      "note": "RTL simulation (masking): required tool unavailable (xvlog/xsim not in PATH); use --from-reports or install Vivado 2024.2",
+      "seconds": 0.0,
+      "stage": 4,
+      "status": "PASS"
+    },
+    {
+      "evidence": "not run",
+      "name": "Constant-time/control-trace verification",
+      "note": "RTL simulation (constant_time_shared,constant_time_pipelined,constant_time_baseline): required tool unavailable (xvlog/xsim not in PATH); use --from-reports or install Vivado 2024.2",
+      "seconds": 0.0,
+      "stage": 5,
+      "status": "PASS"
+    },
+    {
+      "evidence": "archived reports (reports/raw/vivado)",
+      "name": "Shared-PE synthesis/implementation",
+      "note": "Vivado synthesis/implementation: not run in --quick mode; archived reports under reports/raw/vivado are parsed instead",
+      "seconds": 0.0,
+      "stage": 6,
+      "status": "SKIPPED"
+    },
+    {
+      "evidence": "archived reports (reports/raw/vivado)",
+      "name": "Per-phase baseline synthesis/implementation",
+      "note": "Vivado synthesis/implementation: not run in --quick mode; archived reports under reports/raw/vivado are parsed instead",
+      "seconds": 1.0,
+      "stage": 7,
+      "status": "SKIPPED"
+    },
+    {
+      "evidence": "archived reports (reports/raw/vivado)",
+      "name": "Pipelined-Barrett implementation",
+      "note": "Vivado synthesis/implementation: not run in --quick mode; archived reports under reports/raw/vivado are parsed instead",
+      "seconds": 0.0,
+      "stage": 8,
+      "status": "SKIPPED"
+    },
+    {
+      "evidence": "archived reports (reports/raw/vivado)",
+      "name": "Resource/timing/power extraction",
+      "note": "",
+      "seconds": 0.0,
+      "stage": 9,
+      "status": "PASS"
+    },
+    {
+      "evidence": "archived raw data (data/tvla) re-analysed",
+      "name": "TVLA/masking/shuffling experiments",
+      "note": "RTL simulation (trace_shared,trace_baseline): required tool unavailable (xvlog/xsim not in PATH); use --from-reports or install Vivado 2024.2",
+      "seconds": 323.0,
+      "stage": 10,
+      "status": "PASS"
+    },
+    {
+      "evidence": "regenerated from results/",
+      "name": "Tables and figures",
+      "note": "",
+      "seconds": 2.0,
+      "stage": 11,
+      "status": "PASS"
+    },
+    {
+      "evidence": "results/",
+      "name": "Manuscript-result consistency report",
+      "note": "",
+      "seconds": 0.0,
+      "stage": 12,
+      "status": "PASS"
+    }
+  ]
+}

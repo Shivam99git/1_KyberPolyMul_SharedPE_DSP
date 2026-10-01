@@ -1,0 +1,21 @@
+{
+  "address_mismatch_vectors": 0,
+  "address_trace_hash": "05c0b77c64fb07a8",
+  "control_mismatch_vectors": 0,
+  "control_trace_hash": "ce31767dd9812c55",
+  "data_register_differs_in": 255,
+  "design": "pipelined_barrett",
+  "experiment": "constant_time_pipelined",
+  "len_mismatch_vectors": 0,
+  "log": "reports/raw/sim/sim_constant_time_pipelined.log",
+  "pass": true,
+  "ref_len": 30853,
+  "seconds": 0.0,
+  "source": "archived log",
+  "tool_exit_code": 0,
+  "unique_address_hashes": 1,
+  "unique_control_hashes": 1,
+  "unique_data_hashes": 256,
+  "unique_lengths": 1,
+  "vectors": 256
+}

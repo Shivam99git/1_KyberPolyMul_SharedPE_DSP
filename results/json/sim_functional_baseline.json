@@ -1,0 +1,24 @@
+{
+  "coefficients": 65536,
+  "cycles_first": 27269,
+  "cycles_max": 27269,
+  "cycles_min": 27269,
+  "design": "per_phase_baseline",
+  "experiment": "functional_baseline",
+  "log": "reports/raw/sim/sim_functional_baseline.log",
+  "mismatches": 0,
+  "pass": true,
+  "profile": {
+    "fwd_ntt": 14336,
+    "init_done": 5,
+    "inv_ntt": 8064,
+    "mult_issues": 3584,
+    "pwm": 3072,
+    "scaling": 1792,
+    "sum": 27269
+  },
+  "seconds": 0.0,
+  "source": "archived log",
+  "tool_exit_code": 0,
+  "vectors": 256
+}

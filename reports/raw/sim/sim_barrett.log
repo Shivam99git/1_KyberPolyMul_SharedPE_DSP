@@ -1,0 +1,44 @@
+$ xvlog -sv -i <repo>/rtl/common -d ZETA_NTT_MEM="../../../data/test_vectors/zetas_ntt.mem" -d ZETA_BM_MEM="../../../data/test_vectors/zetas_basemul.mem" <repo>/rtl/common/mod_reduce_barrett.v <repo>/rtl/pipelined_barrett/mod_reduce_barrett_pipelined.v <repo>/tb/barrett/tb_barrett_exhaustive.v
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/common/mod_reduce_barrett.v" into library work
+INFO: [VRFC 10-311] analyzing module mod_reduce_barrett
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/pipelined_barrett/mod_reduce_barrett_pipelined.v" into library work
+INFO: [VRFC 10-311] analyzing module mod_reduce_barrett_stage1
+INFO: [VRFC 10-311] analyzing module mod_reduce_barrett_stage2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/tb/barrett/tb_barrett_exhaustive.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_barrett_exhaustive
+$ xelab tb_barrett_exhaustive -s snap -debug typical
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: <home>/Desktop/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab tb_barrett_exhaustive -s snap -debug typical 
+Multi-threading is on. Using 18 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.mod_reduce_barrett
+Compiling module work.mod_reduce_barrett_stage1
+Compiling module work.mod_reduce_barrett_stage2
+Compiling module work.tb_barrett_exhaustive
+Built simulation snapshot snap
+$ xsim snap -R -testplusarg VEC_DIR=../../../data/test_vectors
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu Oct  1 17:45:52 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/snap/xsim_script.tcl
+# xsim {snap} -testplusarg VEC_DIR=../../../data/test_vectors -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+BARRETT_RTL reducer=primary   tested=16777216 min_input=0 max_input=16777215 mismatches=0 max_pre_correction_remainder=5713
+BARRETT_RTL reducer=pipelined tested=16777216 min_input=0 max_input=16777215 mismatches=0 max_pre_correction_remainder=5713
+$finish called at time : 16777216 ns : File "<repo>/tb/barrett/tb_barrett_exhaustive.v" Line 55
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Oct  1 17:45:58 2026...

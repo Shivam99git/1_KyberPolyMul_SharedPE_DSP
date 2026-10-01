@@ -1,0 +1,4 @@
+design,tests,coefficients_checked,mismatches,status
+shared_pe,256,65536,0,PASS
+per_phase_baseline,256,65536,0,PASS
+pipelined_barrett,256,65536,0,PASS

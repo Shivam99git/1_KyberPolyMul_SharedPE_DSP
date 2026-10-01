@@ -1,0 +1,4 @@
+run,period_ns,wns_ns,closed
+t10p000,10.000,-3.011,NO
+t13p061,13.061,-0.307,NO
+t13p418,13.418,0.022,YES

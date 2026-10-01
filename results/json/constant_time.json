@@ -1,0 +1,42 @@
+{
+  "designs": {
+    "per_phase_baseline": {
+      "A_fixed_latency": true,
+      "B_invariant_control_trajectory": true,
+      "C_invariant_address_sequence": true,
+      "D_negative_control_data_differs": true,
+      "address_trace_hash": "f789ffc5d2787ca8",
+      "control_trace_hash": "ff1c3843f95bb4d5",
+      "latency_cycles": 27269,
+      "source": "archived log",
+      "unique_data_hashes": 256,
+      "vectors": 256
+    },
+    "pipelined_barrett": {
+      "A_fixed_latency": true,
+      "B_invariant_control_trajectory": true,
+      "C_invariant_address_sequence": true,
+      "D_negative_control_data_differs": true,
+      "address_trace_hash": "05c0b77c64fb07a8",
+      "control_trace_hash": "ce31767dd9812c55",
+      "latency_cycles": 30853,
+      "source": "archived log",
+      "unique_data_hashes": 256,
+      "vectors": 256
+    },
+    "shared_pe": {
+      "A_fixed_latency": true,
+      "B_invariant_control_trajectory": true,
+      "C_invariant_address_sequence": true,
+      "D_negative_control_data_differs": true,
+      "address_trace_hash": "f789ffc5d2787ca8",
+      "control_trace_hash": "ff1c3843f95bb4d5",
+      "latency_cycles": 27269,
+      "source": "archived log",
+      "unique_data_hashes": 256,
+      "vectors": 256
+    }
+  },
+  "statement": "No data-dependent variation was observed in execution cycle count or memory-address sequence under the evaluated RTL control-flow model.",
+  "status": "PASS"
+}

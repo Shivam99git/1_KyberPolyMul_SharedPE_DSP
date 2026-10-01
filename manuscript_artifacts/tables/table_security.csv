@@ -1,0 +1,6 @@
+Configuration,max|t|,Leakage (|t|>4.5),Chance,Latency,Hardware
+Unprotected (shared-PE),73.5,"5511 / 24,192",0.16,1.00x,--
+Unprotected (per-phase reference),73.5,"5511 / 24,192",0.16,1.00x,--
+Matched control for shuffling,73.3,"5530 / 24,192",0.16,1.00x,--
+Shuffled order,6.3,"8 / 27,266",0.19,1.00x,64 FF (declared)
+"Masked, two runs",4.52,"1 / 48,384",0.33,2.00x,none

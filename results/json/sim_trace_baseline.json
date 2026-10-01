@@ -1,0 +1,10 @@
+{
+  "design": "per_phase_baseline",
+  "experiment": "trace_baseline",
+  "lines": 27269,
+  "log": "reports/raw/sim/sim_trace_baseline.log",
+  "pass": true,
+  "seconds": 0.0,
+  "source": "archived log",
+  "tool_exit_code": 0
+}

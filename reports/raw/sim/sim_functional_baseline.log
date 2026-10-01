@@ -1,0 +1,57 @@
+$ xvlog -sv -i <repo>/rtl/common -d ZETA_NTT_MEM="../../../data/test_vectors/zetas_ntt.mem" -d ZETA_BM_MEM="../../../data/test_vectors/zetas_basemul.mem" -d DUT=ntt_core_baseline <repo>/rtl/common/mod_reduce_barrett.v <repo>/rtl/common/mod_addsub.v <repo>/rtl/common/mult_conventional.v <repo>/rtl/common/mult_unit.v <repo>/rtl/common/zeta_rom.v <repo>/rtl/per_phase_baseline/ntt_core_baseline.v <repo>/tb/functional/tb_polymul_functional.v
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/common/mod_reduce_barrett.v" into library work
+INFO: [VRFC 10-311] analyzing module mod_reduce_barrett
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/common/mod_addsub.v" into library work
+INFO: [VRFC 10-311] analyzing module mod_add
+INFO: [VRFC 10-311] analyzing module mod_sub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/common/mult_conventional.v" into library work
+INFO: [VRFC 10-311] analyzing module mult_conventional
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/common/mult_unit.v" into library work
+INFO: [VRFC 10-311] analyzing module mult_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/common/zeta_rom.v" into library work
+INFO: [VRFC 10-311] analyzing module zeta_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/per_phase_baseline/ntt_core_baseline.v" into library work
+INFO: [VRFC 10-311] analyzing module ntt_core_baseline
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/tb/functional/tb_polymul_functional.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_polymul_functional
+$ xelab tb_polymul_functional -s snap
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: <home>/Desktop/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab tb_polymul_functional -s snap 
+Multi-threading is on. Using 18 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.mod_reduce_barrett
+Compiling module work.mult_conventional
+Compiling module work.mult_unit
+Compiling module work.zeta_rom
+Compiling module work.mod_add
+Compiling module work.mod_sub
+Compiling module work.ntt_core_baseline
+Compiling module work.tb_polymul_functional
+Built simulation snapshot snap
+$ xsim snap -R -testplusarg VEC_DIR=../../../data/test_vectors -testplusarg NUM_VEC=256 -testplusarg OUT=rtl_out.mem
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu Oct  1 17:43:58 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/snap/xsim_script.tcl
+# xsim {snap} -testplusarg VEC_DIR=../../../data/test_vectors -testplusarg NUM_VEC=256 -testplusarg OUT=rtl_out.mem -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PROFILE vector0 fwd_ntt=14336 pwm=3072 inv_ntt=8064 scaling=1792 init_done=5 sum=27269 mult_issues=3584
+RESULT design=ntt_core_baseline vectors=256 coefficients=65536 mismatches=0 cycles_first=27269 cycles_min=27269 cycles_max=27269
+FUNCTIONAL PASS
+$finish called at time : 71198762 ns : File "<repo>/tb/functional/tb_polymul_functional.v" Line 144
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Oct  1 17:44:04 2026...

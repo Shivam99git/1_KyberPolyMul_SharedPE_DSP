@@ -1,0 +1,49 @@
+{
+  "latency": {
+    "masked_cycles_model": 54538,
+    "ratio": 2.0,
+    "single_invocation_cycles_model": 27269
+  },
+  "model": {
+    "failures": 0,
+    "mask_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004
+    ],
+    "masked_products": 250,
+    "masks_per_pair": 5,
+    "operand_pairs": 50,
+    "seed": 2024,
+    "status": "PASS"
+  },
+  "rtl": {
+    "coefficients": 16384,
+    "invocations": 192,
+    "latency_ratio": 2.0,
+    "masked_latency_cycles": 54538,
+    "mismatches_vs_golden": 0,
+    "mismatches_vs_unmasked_core": 0,
+    "status": "PASS",
+    "vectors": 64
+  },
+  "status": "PASS",
+  "tvla": {
+    "cycles_evaluated": 48384,
+    "expected_false_positives": 0.3287860329338778,
+    "max_abs_t": 4.523705438186009,
+    "n_above_threshold": 1,
+    "n_per_group": 400,
+    "null_max_abs_t": 4.329607553215968,
+    "samples": 54536,
+    "seeds": {
+      "fixed_group": 1001,
+      "null_group_a": 3003,
+      "null_group_b": 4004,
+      "random_group": 2002,
+      "secret": 20260922
+    }
+  }
+}

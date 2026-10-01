@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the accompanying manuscript."
+title: "Reproducibility artifact: Constant-Time BRAM-Free Single-PE Number Theoretic Transform (NTT)-based Polynomial Multiplier for CRYSTALS-Kyber on FPGA"
+type: software
+authors:
+  - family-names: Sharma
+    given-names: Shivam
+    affiliation: "Department of Computer Science and Engineering, Indian Institute of Technology Indore"
+  - family-names: Mazumdar
+    given-names: Bodhisatwa
+    affiliation: "Department of Computer Science and Engineering, Indian Institute of Technology Indore"
+license: MIT
+keywords:
+  - CRYSTALS-Kyber
+  - ML-KEM
+  - number theoretic transform
+  - polynomial multiplication
+  - FPGA
+  - resource sharing
+preferred-citation:
+  type: article
+  title: "Constant-Time BRAM-Free Single-PE Number Theoretic Transform (NTT)-based Polynomial Multiplier for CRYSTALS-Kyber on FPGA"
+  authors:
+    - family-names: Sharma
+      given-names: Shivam
+    - family-names: Mazumdar
+      given-names: Bodhisatwa

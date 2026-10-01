@@ -1,0 +1,52 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu Oct  1 17:34:40 2026
+| Host         : <redacted> running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_utilization -hierarchical -file {<repo>/reports/generated/per_phase_baseline/t13p459_util_hier.rpt}
+| Design       : ntt_core_baseline
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------+-----------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|        Instance       |         Module        | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-----------------------+-----------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| ntt_core_baseline     |                 (top) |       1226 |        970 |     256 |    0 | 474 |      0 |      0 |         12 |
+|   (ntt_core_baseline) |                 (top) |        725 |        469 |     256 |    0 | 322 |      0 |      0 |          0 |
+|   u_add_bm0           |               mod_add |         39 |         39 |       0 |    0 |   0 |      0 |      0 |          0 |
+|   u_add_bm1           |             mod_add_0 |         62 |         62 |       0 |    0 |   0 |      0 |      0 |          0 |
+|   u_add_intt          |             mod_add_1 |         34 |         34 |       0 |    0 |   0 |      0 |      0 |          0 |
+|   u_add_ntt           |             mod_add_2 |         49 |         49 |       0 |    0 |   0 |      0 |      0 |          0 |
+|   u_mult_bm           |             mult_unit |         62 |         62 |       0 |    0 |  38 |      0 |      0 |          3 |
+|     u_mult            |  mult_conventional_11 |         62 |         62 |       0 |    0 |  38 |      0 |      0 |          3 |
+|       (u_mult)        |  mult_conventional_11 |         16 |         16 |       0 |    0 |  14 |      0 |      0 |          1 |
+|       u_barrett       | mod_reduce_barrett_12 |         46 |         46 |       0 |    0 |  24 |      0 |      0 |          2 |
+|   u_mult_intt         |           mult_unit_3 |         51 |         51 |       0 |    0 |  38 |      0 |      0 |          3 |
+|     u_mult            |   mult_conventional_9 |         51 |         51 |       0 |    0 |  38 |      0 |      0 |          3 |
+|       (u_mult)        |   mult_conventional_9 |          3 |          3 |       0 |    0 |  14 |      0 |      0 |          1 |
+|       u_barrett       | mod_reduce_barrett_10 |         48 |         48 |       0 |    0 |  24 |      0 |      0 |          2 |
+|   u_mult_ntt          |           mult_unit_4 |         89 |         89 |       0 |    0 |  38 |      0 |      0 |          3 |
+|     u_mult            |   mult_conventional_7 |         89 |         89 |       0 |    0 |  38 |      0 |      0 |          3 |
+|       (u_mult)        |   mult_conventional_7 |         39 |         39 |       0 |    0 |  14 |      0 |      0 |          1 |
+|       u_barrett       |  mod_reduce_barrett_8 |         50 |         50 |       0 |    0 |  24 |      0 |      0 |          2 |
+|   u_mult_scale        |           mult_unit_5 |         61 |         61 |       0 |    0 |  38 |      0 |      0 |          3 |
+|     u_mult            |     mult_conventional |         61 |         61 |       0 |    0 |  38 |      0 |      0 |          3 |
+|       (u_mult)        |     mult_conventional |         13 |         13 |       0 |    0 |  14 |      0 |      0 |          1 |
+|       u_barrett       |    mod_reduce_barrett |         48 |         48 |       0 |    0 |  24 |      0 |      0 |          2 |
+|   u_sub_intt          |               mod_sub |         30 |         30 |       0 |    0 |   0 |      0 |      0 |          0 |
+|   u_sub_ntt           |             mod_sub_6 |         33 |         33 |       0 |    0 |   0 |      0 |      0 |          0 |
++-----------------------+-----------------------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

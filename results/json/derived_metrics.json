@@ -1,0 +1,296 @@
+{
+  "changes": {
+    "pipelined_vs_primary": {
+      "atp_lut_us": -29.935657065192096,
+      "closed_period_ns": -38.142793262781325,
+      "cycles": 13.14312956104001,
+      "ffs": -5.88235294117647,
+      "fmax_closed_mhz": 61.66265060240962,
+      "fmax_ratio": 1.6166265060240963,
+      "latency_us": -30.012820438468307,
+      "luts": 0.11025358324145534
+    },
+    "shared_vs_per_phase": {
+      "atp_lut_us": -29.438318596898117,
+      "closed_period_ns": -2.7540223220756688,
+      "dsp": -75.0,
+      "dtp_dsp_us": -75.68850558051892,
+      "dynamic_mw": -23.121191604603936,
+      "edp_nj_s": -8.656711290100843,
+      "energy_per_op_uj": -6.0698541049941195,
+      "ffs": -24.68354430379747,
+      "fmax_closed_mhz": 2.832016693993147,
+      "fmax_derived_mhz": 3.0589501191299835,
+      "latency_us": -2.754022322075688,
+      "lut_logic": -34.50704225352113,
+      "luts": -27.439999999999998,
+      "slices": -28.57142857142857,
+      "throughput_per_s": 2.832016693993169,
+      "total_mw": -3.409736692555413
+    }
+  },
+  "common_period_power": {
+    "saif_manuscript_stimulus": {
+      "dynamic_power_change_pct": -29.272968588703723,
+      "per_phase_baseline": {
+        "dynamic_mw": 6.781,
+        "nets_matched_pct": 12.995049504950495,
+        "period_ns": 13.798
+      },
+      "shared_pe": {
+        "dynamic_mw": 4.796,
+        "nets_matched_pct": 19.074778200253487,
+        "period_ns": 13.798
+      }
+    },
+    "saif_random_stimulus": {
+      "dynamic_power_change_pct": -28.31991951710262,
+      "per_phase_baseline": {
+        "dynamic_mw": 7.952000000000001,
+        "nets_matched_pct": 12.995049504950495,
+        "period_ns": 13.798
+      },
+      "shared_pe": {
+        "dynamic_mw": 5.7,
+        "nets_matched_pct": 19.074778200253487,
+        "period_ns": 13.798
+      }
+    },
+    "vectorless_common_period": {
+      "dynamic_power_change_pct": -23.28880482326516,
+      "per_phase_baseline": {
+        "dynamic_mw": 8.459,
+        "nets_matched_pct": null,
+        "period_ns": 13.798
+      },
+      "shared_pe": {
+        "dynamic_mw": 6.489,
+        "nets_matched_pct": null,
+        "period_ns": 13.798
+      }
+    }
+  },
+  "designs": {
+    "per_phase_baseline": {
+      "atp_lut_us": 470322.0775000001,
+      "bram36": 0,
+      "closed_period_ns": 13.798,
+      "closed_wns": 0.201,
+      "critical_path_delay_ns": 13.356,
+      "critical_path_logic_ns": 8.82,
+      "critical_path_route_ns": 4.536,
+      "cycles": 27269,
+      "dsp": 12,
+      "dsp_util_pct": 13.33,
+      "dtp_dsp_us": 4515.091944000001,
+      "dynamic_mw": 11.816,
+      "edp_nj_s": 11.359676271730363,
+      "energy_per_op_uj": 30.191215805009605,
+      "ffs": 474,
+      "fmax_closed_mhz": 72.47427163357008,
+      "fmax_derived_mhz": 74.57677679170706,
+      "latency_us": 376.25766200000004,
+      "lut_logic": 994,
+      "lut_memory": 256,
+      "lut_util_pct": 6.01,
+      "luts": 1250,
+      "slices": 406,
+      "static_mw": 68.42580000000001,
+      "throughput_per_s": 2657.7531861663456,
+      "total_mw": 80.24080000000001,
+      "wns_at_10ns": -3.409
+    },
+    "pipelined_barrett": {
+      "atp_lut_us": 232520.5492,
+      "bram36": 0,
+      "closed_period_ns": 8.3,
+      "closed_wns": 0.008,
+      "critical_path_delay_ns": 9.442,
+      "critical_path_logic_ns": 1.782,
+      "critical_path_route_ns": 7.66,
+      "cycles": 30853,
+      "dsp": 3,
+      "dsp_util_pct": 3.33,
+      "dtp_dsp_us": 768.2397000000001,
+      "dynamic_mw": 9.187000000000001,
+      "edp_nj_s": 5.0893456951327956,
+      "energy_per_op_uj": 19.87405374312,
+      "ffs": 336,
+      "fmax_closed_mhz": 120.48192771084337,
+      "fmax_derived_mhz": 105.29640939243971,
+      "latency_us": 256.0799,
+      "lut_logic": 652,
+      "lut_memory": 256,
+      "lut_util_pct": 4.37,
+      "luts": 908,
+      "slices": 269,
+      "static_mw": 68.42080000000001,
+      "throughput_per_s": 3905.031203151829,
+      "total_mw": 77.6088,
+      "wns_at_10ns": 0.503
+    },
+    "shared_pe": {
+      "atp_lut_us": 331867.165894,
+      "bram36": 0,
+      "closed_period_ns": 13.418,
+      "closed_wns": 0.022,
+      "critical_path_delay_ns": 12.956,
+      "critical_path_logic_ns": 8.758,
+      "critical_path_route_ns": 4.198,
+      "cycles": 27269,
+      "dsp": 3,
+      "dsp_util_pct": 3.33,
+      "dtp_dsp_us": 1097.6863259999998,
+      "dynamic_mw": 9.084,
+      "edp_nj_s": 10.376301893396574,
+      "energy_per_op_uj": 28.358653053121596,
+      "ffs": 357,
+      "fmax_closed_mhz": 74.52675510508273,
+      "fmax_derived_mhz": 76.85804319422029,
+      "latency_us": 365.89544199999995,
+      "lut_logic": 651,
+      "lut_memory": 256,
+      "lut_util_pct": 4.36,
+      "luts": 907,
+      "slices": 290,
+      "static_mw": 68.42080000000001,
+      "throughput_per_s": 2733.021200083712,
+      "total_mw": 77.5048,
+      "wns_at_10ns": -3.011
+    }
+  },
+  "hierarchy": {
+    "per_phase_baseline": {
+      "Adder(s)": {
+        "dsp": 0,
+        "ffs": 0,
+        "instances": 4,
+        "logic_luts": 184,
+        "lutram": 0,
+        "luts": 184
+      },
+      "Control + storage": {
+        "dsp": 0,
+        "ffs": 322,
+        "instances": 0,
+        "logic_luts": 475,
+        "lutram": 256,
+        "luts": 731
+      },
+      "Multiplier(s)": {
+        "dsp": 12,
+        "ffs": 152,
+        "instances": 4,
+        "logic_luts": 278,
+        "lutram": 0,
+        "luts": 278
+      },
+      "Subtractor(s)": {
+        "dsp": 0,
+        "ffs": 0,
+        "instances": 2,
+        "logic_luts": 63,
+        "lutram": 0,
+        "luts": 63
+      }
+    },
+    "pipelined_barrett": {
+      "Adder(s)": {
+        "dsp": 0,
+        "ffs": 0,
+        "instances": 1,
+        "logic_luts": 85,
+        "lutram": 0,
+        "luts": 85
+      },
+      "Control + storage": {
+        "dsp": 0,
+        "ffs": 320,
+        "instances": 0,
+        "logic_luts": 453,
+        "lutram": 256,
+        "luts": 709
+      },
+      "Multiplier(s)": {
+        "dsp": 3,
+        "ffs": 16,
+        "instances": 1,
+        "logic_luts": 68,
+        "lutram": 0,
+        "luts": 68
+      },
+      "Subtractor(s)": {
+        "dsp": 0,
+        "ffs": 0,
+        "instances": 1,
+        "logic_luts": 49,
+        "lutram": 0,
+        "luts": 49
+      }
+    },
+    "shared_pe": {
+      "Adder(s)": {
+        "dsp": 0,
+        "ffs": 0,
+        "instances": 1,
+        "logic_luts": 85,
+        "lutram": 0,
+        "luts": 85
+      },
+      "Control + storage": {
+        "dsp": 0,
+        "ffs": 319,
+        "instances": 0,
+        "logic_luts": 449,
+        "lutram": 256,
+        "luts": 705
+      },
+      "Multiplier(s)": {
+        "dsp": 3,
+        "ffs": 38,
+        "instances": 1,
+        "logic_luts": 71,
+        "lutram": 0,
+        "luts": 71
+      },
+      "Subtractor(s)": {
+        "dsp": 0,
+        "ffs": 0,
+        "instances": 1,
+        "logic_luts": 49,
+        "lutram": 0,
+        "luts": 49
+      }
+    }
+  },
+  "slack_distribution": {
+    "per_phase_baseline": {
+      "endpoints": 2000,
+      "endpoints_within_1ns": 48,
+      "gap_after_within_1ns_group_ns": 2.843,
+      "largest_gap_ns": 2.843,
+      "pct_within_1ns": 2.4,
+      "worst_slack_ns": -3.409
+    },
+    "pipelined_barrett": {
+      "endpoints": 2000,
+      "endpoints_within_1ns": 67,
+      "gap_after_within_1ns_group_ns": 0.05500000000000005,
+      "largest_gap_ns": 0.2599999999999998,
+      "pct_within_1ns": 3.35,
+      "worst_slack_ns": 0.503
+    },
+    "shared_pe": {
+      "endpoints": 2000,
+      "endpoints_within_1ns": 12,
+      "gap_after_within_1ns_group_ns": 2.4939999999999998,
+      "largest_gap_ns": 2.4939999999999998,
+      "pct_within_1ns": 0.6,
+      "worst_slack_ns": -3.011
+    }
+  },
+  "source": {
+    "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024",
+    "vivado_results": "reports/raw/vivado"
+  }
+}

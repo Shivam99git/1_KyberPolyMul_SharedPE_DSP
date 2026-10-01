@@ -1,0 +1,24 @@
+{
+  "designs": {
+    "per_phase_baseline": {
+      "clock_edges": 27269,
+      "first_mismatch": null,
+      "mismatches": 0,
+      "register_fields": 47,
+      "status": "PASS",
+      "values_compared": 1267279,
+      "values_skipped_unreset_x": 14364
+    },
+    "shared_pe": {
+      "clock_edges": 27269,
+      "first_mismatch": null,
+      "mismatches": 0,
+      "register_fields": 35,
+      "status": "PASS",
+      "values_compared": 940051,
+      "values_skipped_unreset_x": 14364
+    }
+  },
+  "status": "PASS",
+  "vector_index": 5
+}

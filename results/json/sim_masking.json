@@ -1,0 +1,18 @@
+{
+  "coefficients": 16384,
+  "design": "shared_pe",
+  "experiment": "masking",
+  "invocations": 192,
+  "latency_per_invocation_max": 27269,
+  "latency_per_invocation_min": 27269,
+  "log": "reports/raw/sim/sim_masking.log",
+  "masked_latency_max": 54538,
+  "masked_latency_min": 54538,
+  "mismatches_vs_golden": 0,
+  "mismatches_vs_unmasked_core": 0,
+  "pass": true,
+  "seconds": 0.0,
+  "source": "archived log",
+  "tool_exit_code": 0,
+  "vectors": 64
+}

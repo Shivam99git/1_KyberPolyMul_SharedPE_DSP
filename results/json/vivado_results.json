@@ -1,0 +1,4533 @@
+{
+  "designs": {
+    "per_phase_baseline": {
+      "at_10ns": "t10p000",
+      "closed": "t13p798",
+      "closure_search": [
+        "t10p000",
+        "t13p459",
+        "t13p601",
+        "t13p798"
+      ],
+      "runs": {
+        "saif_t13p798": {
+          "closed": true,
+          "fmax_closed_mhz": 72.47427163357008,
+          "fmax_derived_mhz": 73.5456350665588,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 4,
+              "logic_luts": 184,
+              "lutram": 0,
+              "luts": 184
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 322,
+              "instances": 0,
+              "logic_luts": 469,
+              "lutram": 256,
+              "luts": 725
+            },
+            "Multiplier(s)": {
+              "dsp": 12,
+              "ffs": 152,
+              "instances": 4,
+              "logic_luts": 241,
+              "lutram": 0,
+              "luts": 241
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 2,
+              "logic_luts": 63,
+              "lutram": 0,
+              "luts": 63
+            }
+          },
+          "path": {
+            "data_path_delay": 13.545,
+            "destination": "u_mult_scale/u_mult/result_reg[8]/D",
+            "logic_delay": 8.994,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 66.401,
+            "requirement": 13.798,
+            "route_delay": 4.551,
+            "route_pct": 33.599,
+            "slack": 0.201,
+            "source": "r0_i_1__2/C"
+          },
+          "period_ns": 13.798,
+          "power_text": {
+            "activity_file": "SAIF",
+            "confidence": "Medium",
+            "dynamic_w": 0.007,
+            "nets_matched": 315,
+            "nets_matched_pct": 12.995049504950495,
+            "nets_total": 2424,
+            "static_w": 0.068,
+            "total_w": 0.075
+          },
+          "power_xml": {
+            "dynamic_mw": 6.781,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.006781,
+                "static_a": 0.009546,
+                "total_a": 0.016327,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.41680000000001,
+            "total_mw": 75.1978
+          },
+          "role": "saif",
+          "route": {
+            "fully_routed": 1818,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "saif_t13p798",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2915,
+            "whs": 0.178,
+            "wns": 0.201
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 12,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 13.33,
+            "ffs": 474,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 1.14,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 947,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 4.55,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 1203,
+            "luts_available": 20800.0,
+            "luts_util_pct": 5.78,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 412,
+            "slices_available": 8150.0,
+            "slices_util_pct": 5.06
+          }
+        },
+        "saifrand_t13p798": {
+          "closed": true,
+          "fmax_closed_mhz": 72.47427163357008,
+          "fmax_derived_mhz": 73.5456350665588,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 4,
+              "logic_luts": 184,
+              "lutram": 0,
+              "luts": 184
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 322,
+              "instances": 0,
+              "logic_luts": 469,
+              "lutram": 256,
+              "luts": 725
+            },
+            "Multiplier(s)": {
+              "dsp": 12,
+              "ffs": 152,
+              "instances": 4,
+              "logic_luts": 241,
+              "lutram": 0,
+              "luts": 241
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 2,
+              "logic_luts": 63,
+              "lutram": 0,
+              "luts": 63
+            }
+          },
+          "path": {
+            "data_path_delay": 13.545,
+            "destination": "u_mult_scale/u_mult/result_reg[8]/D",
+            "logic_delay": 8.994,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 66.401,
+            "requirement": 13.798,
+            "route_delay": 4.551,
+            "route_pct": 33.599,
+            "slack": 0.201,
+            "source": "r0_i_1__2/C"
+          },
+          "period_ns": 13.798,
+          "power_text": {
+            "activity_file": "SAIF",
+            "confidence": "Medium",
+            "dynamic_w": 0.008,
+            "nets_matched": 315,
+            "nets_matched_pct": 12.995049504950495,
+            "nets_total": 2424,
+            "static_w": 0.068,
+            "total_w": 0.076
+          },
+          "power_xml": {
+            "dynamic_mw": 7.952000000000001,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.007952,
+                "static_a": 0.009548,
+                "total_a": 0.0175,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.4188,
+            "total_mw": 76.3708
+          },
+          "role": "saif_random_stimulus",
+          "route": {
+            "fully_routed": 1818,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "saifrand_t13p798",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2915,
+            "whs": 0.178,
+            "wns": 0.201
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 12,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 13.33,
+            "ffs": 474,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 1.14,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 947,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 4.55,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 1203,
+            "luts_available": 20800.0,
+            "luts_util_pct": 5.78,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 412,
+            "slices_available": 8150.0,
+            "slices_util_pct": 5.06
+          }
+        },
+        "t10p000": {
+          "closed": false,
+          "fmax_closed_mhz": null,
+          "fmax_derived_mhz": 74.57677679170706,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 4,
+              "logic_luts": 184,
+              "lutram": 0,
+              "luts": 184
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 322,
+              "instances": 0,
+              "logic_luts": 475,
+              "lutram": 256,
+              "luts": 731
+            },
+            "Multiplier(s)": {
+              "dsp": 12,
+              "ffs": 152,
+              "instances": 4,
+              "logic_luts": 278,
+              "lutram": 0,
+              "luts": 278
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 2,
+              "logic_luts": 63,
+              "lutram": 0,
+              "luts": 63
+            }
+          },
+          "path": {
+            "data_path_delay": 13.356,
+            "destination": "u_mult_scale/u_mult/result_reg[8]/D",
+            "logic_delay": 8.82,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 66.039,
+            "requirement": 10.0,
+            "route_delay": 4.536,
+            "route_pct": 33.961,
+            "slack": -3.409,
+            "source": "r0_i_1__2/C"
+          },
+          "period_ns": 10.0,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.012,
+            "static_w": 0.068,
+            "total_w": 0.08
+          },
+          "power_xml": {
+            "dynamic_mw": 11.816,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.011816,
+                "static_a": 0.009555,
+                "total_a": 0.02137,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.42580000000001,
+            "total_mw": 80.24080000000001
+          },
+          "role": "at_10ns",
+          "route": {
+            "fully_routed": 1820,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "slack_endpoints": 2000,
+          "tag": "t10p000",
+          "timing": {
+            "constraints_met": false,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": -149.283,
+            "tns_failing_endpoints": 48,
+            "total_endpoints": 2915,
+            "whs": 0.146,
+            "wns": -3.409
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 12,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 13.33,
+            "ffs": 474,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 1.14,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 994,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 4.78,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 1250,
+            "luts_available": 20800.0,
+            "luts_util_pct": 6.01,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 406,
+            "slices_available": 8150.0,
+            "slices_util_pct": 4.98
+          }
+        },
+        "t13p459": {
+          "closed": false,
+          "fmax_closed_mhz": null,
+          "fmax_derived_mhz": 73.79529186037931,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 4,
+              "logic_luts": 184,
+              "lutram": 0,
+              "luts": 184
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 322,
+              "instances": 0,
+              "logic_luts": 469,
+              "lutram": 256,
+              "luts": 725
+            },
+            "Multiplier(s)": {
+              "dsp": 12,
+              "ffs": 152,
+              "instances": 4,
+              "logic_luts": 263,
+              "lutram": 0,
+              "luts": 263
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 2,
+              "logic_luts": 63,
+              "lutram": 0,
+              "luts": 63
+            }
+          },
+          "path": {
+            "data_path_delay": 13.546,
+            "destination": "u_mult_bm/u_mult/result_reg[4]/D",
+            "logic_delay": 8.758,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 64.654,
+            "requirement": 13.459,
+            "route_delay": 4.788,
+            "route_pct": 35.346,
+            "slack": -0.092,
+            "source": "r0_i_1__0/C"
+          },
+          "period_ns": 13.459,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.009,
+            "static_w": 0.068,
+            "total_w": 0.077
+          },
+          "power_xml": {
+            "dynamic_mw": 8.7,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.0087,
+                "static_a": 0.009549,
+                "total_a": 0.018249,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.41980000000001,
+            "total_mw": 77.11980000000001
+          },
+          "role": "closure_search",
+          "route": {
+            "fully_routed": 1818,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t13p459",
+          "timing": {
+            "constraints_met": false,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": -0.532,
+            "tns_failing_endpoints": 15,
+            "total_endpoints": 2915,
+            "whs": 0.181,
+            "wns": -0.092
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 12,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 13.33,
+            "ffs": 474,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 1.14,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 970,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 4.66,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 1226,
+            "luts_available": 20800.0,
+            "luts_util_pct": 5.89,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 409,
+            "slices_available": 8150.0,
+            "slices_util_pct": 5.02
+          }
+        },
+        "t13p601": {
+          "closed": false,
+          "fmax_closed_mhz": null,
+          "fmax_derived_mhz": 72.73785277858597,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 4,
+              "logic_luts": 184,
+              "lutram": 0,
+              "luts": 184
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 322,
+              "instances": 0,
+              "logic_luts": 469,
+              "lutram": 256,
+              "luts": 725
+            },
+            "Multiplier(s)": {
+              "dsp": 12,
+              "ffs": 104,
+              "instances": 4,
+              "logic_luts": 228,
+              "lutram": 0,
+              "luts": 228
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 2,
+              "logic_luts": 63,
+              "lutram": 0,
+              "luts": 63
+            }
+          },
+          "path": {
+            "data_path_delay": 13.696,
+            "destination": "u_mult_bm/u_mult/result_reg[11]/D",
+            "logic_delay": 8.99,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 65.639,
+            "requirement": 13.601,
+            "route_delay": 4.706,
+            "route_pct": 34.361,
+            "slack": -0.147,
+            "source": "r0_i_1__0/C"
+          },
+          "period_ns": 13.601,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.008,
+            "static_w": 0.068,
+            "total_w": 0.077
+          },
+          "power_xml": {
+            "dynamic_mw": 8.246,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.008246,
+                "static_a": 0.009548,
+                "total_a": 0.017795,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.4188,
+            "total_mw": 76.6658
+          },
+          "role": "closure_search",
+          "route": {
+            "fully_routed": 1772,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t13p601",
+          "timing": {
+            "constraints_met": false,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": -0.671,
+            "tns_failing_endpoints": 8,
+            "total_endpoints": 2869,
+            "whs": 0.156,
+            "wns": -0.147
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 12,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 13.33,
+            "ffs": 426,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 1.02,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 935,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 4.5,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 1191,
+            "luts_available": 20800.0,
+            "luts_util_pct": 5.73,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 411,
+            "slices_available": 8150.0,
+            "slices_util_pct": 5.04
+          }
+        },
+        "t13p798": {
+          "closed": true,
+          "fmax_closed_mhz": 72.47427163357008,
+          "fmax_derived_mhz": 73.5456350665588,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 4,
+              "logic_luts": 184,
+              "lutram": 0,
+              "luts": 184
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 322,
+              "instances": 0,
+              "logic_luts": 469,
+              "lutram": 256,
+              "luts": 725
+            },
+            "Multiplier(s)": {
+              "dsp": 12,
+              "ffs": 152,
+              "instances": 4,
+              "logic_luts": 241,
+              "lutram": 0,
+              "luts": 241
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 2,
+              "logic_luts": 63,
+              "lutram": 0,
+              "luts": 63
+            }
+          },
+          "path": {
+            "data_path_delay": 13.545,
+            "destination": "u_mult_scale/u_mult/result_reg[8]/D",
+            "logic_delay": 8.994,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 66.401,
+            "requirement": 13.798,
+            "route_delay": 4.551,
+            "route_pct": 33.599,
+            "slack": 0.201,
+            "source": "r0_i_1__2/C"
+          },
+          "period_ns": 13.798,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.008,
+            "static_w": 0.068,
+            "total_w": 0.077
+          },
+          "power_xml": {
+            "dynamic_mw": 8.459,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.008459,
+                "static_a": 0.009549,
+                "total_a": 0.018008,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.41980000000001,
+            "total_mw": 76.87880000000001
+          },
+          "role": "closed",
+          "route": {
+            "fully_routed": 1818,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t13p798",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2915,
+            "whs": 0.178,
+            "wns": 0.201
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 12,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 13.33,
+            "ffs": 474,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 1.14,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 947,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 4.55,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 1203,
+            "luts_available": 20800.0,
+            "luts_util_pct": 5.78,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 412,
+            "slices_available": 8150.0,
+            "slices_util_pct": 5.06
+          }
+        },
+        "vecless_t13p798": {
+          "closed": true,
+          "fmax_closed_mhz": 72.47427163357008,
+          "fmax_derived_mhz": 73.5456350665588,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 4,
+              "logic_luts": 184,
+              "lutram": 0,
+              "luts": 184
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 322,
+              "instances": 0,
+              "logic_luts": 469,
+              "lutram": 256,
+              "luts": 725
+            },
+            "Multiplier(s)": {
+              "dsp": 12,
+              "ffs": 152,
+              "instances": 4,
+              "logic_luts": 241,
+              "lutram": 0,
+              "luts": 241
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 2,
+              "logic_luts": 63,
+              "lutram": 0,
+              "luts": 63
+            }
+          },
+          "path": {
+            "data_path_delay": 13.545,
+            "destination": "u_mult_scale/u_mult/result_reg[8]/D",
+            "logic_delay": 8.994,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 66.401,
+            "requirement": 13.798,
+            "route_delay": 4.551,
+            "route_pct": 33.599,
+            "slack": 0.201,
+            "source": "r0_i_1__2/C"
+          },
+          "period_ns": 13.798,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.008,
+            "static_w": 0.068,
+            "total_w": 0.077
+          },
+          "power_xml": {
+            "dynamic_mw": 8.459,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.008459,
+                "static_a": 0.009549,
+                "total_a": 0.018008,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.41980000000001,
+            "total_mw": 76.87880000000001
+          },
+          "role": "vecless_common",
+          "route": {
+            "fully_routed": 1818,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "vecless_t13p798",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2915,
+            "whs": 0.178,
+            "wns": 0.201
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 12,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 13.33,
+            "ffs": 474,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 1.14,
+            "header": {
+              "design": "ntt_core_baseline",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 947,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 4.55,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 1203,
+            "luts_available": 20800.0,
+            "luts_util_pct": 5.78,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 412,
+            "slices_available": 8150.0,
+            "slices_util_pct": 5.06
+          }
+        }
+      },
+      "saif": "saif_t13p798",
+      "saif_random_stimulus": "saifrand_t13p798",
+      "vecless_common": "vecless_t13p798"
+    },
+    "pipelined_barrett": {
+      "at_10ns": "t10p000",
+      "closed": "t8p300",
+      "closure_search": [
+        "t10p000",
+        "t9p500",
+        "t9p300",
+        "t9p100",
+        "t8p900",
+        "t8p700",
+        "t8p500",
+        "t8p300",
+        "t8p100"
+      ],
+      "runs": {
+        "t10p000": {
+          "closed": true,
+          "fmax_closed_mhz": 100.0,
+          "fmax_derived_mhz": 105.29640939243971,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 85,
+              "lutram": 0,
+              "luts": 85
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 320,
+              "instances": 0,
+              "logic_luts": 453,
+              "lutram": 256,
+              "luts": 709
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 16,
+              "instances": 1,
+              "logic_luts": 68,
+              "lutram": 0,
+              "luts": 68
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 49,
+              "lutram": 0,
+              "luts": 49
+            }
+          },
+          "path": {
+            "data_path_delay": 9.442,
+            "destination": "wa_reg[4]/D",
+            "logic_delay": 1.782,
+            "logic_level_detail": "LUT3=1 LUT4=1 LUT5=1 LUT6=3 RAMD64E=1",
+            "logic_levels": 7,
+            "logic_pct": 18.874,
+            "requirement": 10.0,
+            "route_delay": 7.66,
+            "route_pct": 81.126,
+            "slack": 0.503,
+            "source": "FSM_onehot_state_reg[11]/C"
+          },
+          "period_ns": 10.0,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.009,
+            "static_w": 0.068,
+            "total_w": 0.078
+          },
+          "power_xml": {
+            "dynamic_mw": 9.187000000000001,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.009187,
+                "static_a": 0.00955,
+                "total_a": 0.018738,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.42080000000001,
+            "total_mw": 77.6088
+          },
+          "role": "at_10ns",
+          "route": {
+            "fully_routed": 1186,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "slack_endpoints": 2000,
+          "tag": "t10p000",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2695,
+            "whs": 0.202,
+            "wns": 0.503
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 336,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.81,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 652,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.13,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 908,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.37,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 269,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.3
+          }
+        },
+        "t8p100": {
+          "closed": false,
+          "fmax_closed_mhz": null,
+          "fmax_derived_mhz": 120.33694344163658,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 87,
+              "lutram": 0,
+              "luts": 87
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 320,
+              "instances": 0,
+              "logic_luts": 465,
+              "lutram": 256,
+              "luts": 721
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 29,
+              "instances": 1,
+              "logic_luts": 77,
+              "lutram": 0,
+              "luts": 77
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 62,
+              "lutram": 0,
+              "luts": 62
+            }
+          },
+          "path": {
+            "data_path_delay": 8.255,
+            "destination": "u_mult/u_mult/result_reg[6]/D",
+            "logic_delay": 4.979,
+            "logic_level_detail": "DSP48E1=1 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 6,
+            "logic_pct": 60.317,
+            "requirement": 8.1,
+            "route_delay": 3.276,
+            "route_pct": 39.683,
+            "slack": -0.21,
+            "source": "r0_i_15/C"
+          },
+          "period_ns": 8.1,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.012,
+            "static_w": 0.068,
+            "total_w": 0.081
+          },
+          "power_xml": {
+            "dynamic_mw": 12.142,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.012142,
+                "static_a": 0.009555,
+                "total_a": 0.021697,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.42580000000001,
+            "total_mw": 80.5678
+          },
+          "role": "closure_search",
+          "route": {
+            "fully_routed": 1198,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t8p100",
+          "timing": {
+            "constraints_met": false,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": -0.255,
+            "tns_failing_endpoints": 2,
+            "total_endpoints": 2696,
+            "whs": 0.206,
+            "wns": -0.21
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 349,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.84,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 688,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.31,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 944,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.54,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 291,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.57
+          }
+        },
+        "t8p300": {
+          "closed": true,
+          "fmax_closed_mhz": 120.48192771084337,
+          "fmax_derived_mhz": 120.59816690786297,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 87,
+              "lutram": 0,
+              "luts": 87
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 320,
+              "instances": 0,
+              "logic_luts": 465,
+              "lutram": 256,
+              "luts": 721
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 29,
+              "instances": 1,
+              "logic_luts": 77,
+              "lutram": 0,
+              "luts": 77
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 56,
+              "lutram": 0,
+              "luts": 56
+            }
+          },
+          "path": {
+            "data_path_delay": 8.239,
+            "destination": "wa_reg[8]/D",
+            "logic_delay": 1.572,
+            "logic_level_detail": "LUT3=1 LUT4=1 LUT5=2 LUT6=4 RAMD64E=1",
+            "logic_levels": 9,
+            "logic_pct": 19.081,
+            "requirement": 8.3,
+            "route_delay": 6.667,
+            "route_pct": 80.919,
+            "slack": 0.008,
+            "source": "FSM_onehot_state_reg[31]/C"
+          },
+          "period_ns": 8.3,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.012,
+            "static_w": 0.068,
+            "total_w": 0.08
+          },
+          "power_xml": {
+            "dynamic_mw": 11.870000000000001,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.01187,
+                "static_a": 0.009555,
+                "total_a": 0.021424,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.42580000000001,
+            "total_mw": 80.29480000000001
+          },
+          "role": "closed",
+          "route": {
+            "fully_routed": 1202,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t8p300",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2696,
+            "whs": 0.203,
+            "wns": 0.008
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 349,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.84,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 681,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.27,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 937,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.5,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 303,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.72
+          }
+        },
+        "t8p500": {
+          "closed": true,
+          "fmax_closed_mhz": 117.6470588235294,
+          "fmax_derived_mhz": 118.28720132481665,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 87,
+              "lutram": 0,
+              "luts": 87
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 320,
+              "instances": 0,
+              "logic_luts": 463,
+              "lutram": 256,
+              "luts": 719
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 29,
+              "instances": 1,
+              "logic_luts": 77,
+              "lutram": 0,
+              "luts": 77
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 51,
+              "lutram": 0,
+              "luts": 51
+            }
+          },
+          "path": {
+            "data_path_delay": 8.402,
+            "destination": "u_mult/u_mult/result_reg[1]/D",
+            "logic_delay": 4.917,
+            "logic_level_detail": "DSP48E1=1 LUT2=1 LUT3=1 LUT4=1 LUT5=1 LUT6=1",
+            "logic_levels": 6,
+            "logic_pct": 58.521,
+            "requirement": 8.5,
+            "route_delay": 3.485,
+            "route_pct": 41.479,
+            "slack": 0.046,
+            "source": "r0_i_15/C"
+          },
+          "period_ns": 8.5,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.011,
+            "static_w": 0.068,
+            "total_w": 0.08
+          },
+          "power_xml": {
+            "dynamic_mw": 11.338000000000001,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.011338,
+                "static_a": 0.009554,
+                "total_a": 0.020892,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.4248,
+            "total_mw": 79.7628
+          },
+          "role": "closure_search",
+          "route": {
+            "fully_routed": 1200,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t8p500",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2696,
+            "whs": 0.183,
+            "wns": 0.046
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 349,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.84,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 676,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.25,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 932,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.48,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 285,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.5
+          }
+        },
+        "t8p700": {
+          "closed": true,
+          "fmax_closed_mhz": 114.9425287356322,
+          "fmax_derived_mhz": 116.33317822242904,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 87,
+              "lutram": 0,
+              "luts": 87
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 320,
+              "instances": 0,
+              "logic_luts": 464,
+              "lutram": 256,
+              "luts": 720
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 29,
+              "instances": 1,
+              "logic_luts": 76,
+              "lutram": 0,
+              "luts": 76
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 49,
+              "lutram": 0,
+              "luts": 49
+            }
+          },
+          "path": {
+            "data_path_delay": 8.593,
+            "destination": "u_mult/u_mult/result_reg[4]/D",
+            "logic_delay": 4.979,
+            "logic_level_detail": "DSP48E1=1 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 6,
+            "logic_pct": 57.94,
+            "requirement": 8.7,
+            "route_delay": 3.614,
+            "route_pct": 42.06,
+            "slack": 0.104,
+            "source": "r0_i_15/C"
+          },
+          "period_ns": 8.7,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.011,
+            "static_w": 0.068,
+            "total_w": 0.08
+          },
+          "power_xml": {
+            "dynamic_mw": 11.133000000000001,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.011133,
+                "static_a": 0.009554,
+                "total_a": 0.020687,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.4248,
+            "total_mw": 79.55780000000001
+          },
+          "role": "closure_search",
+          "route": {
+            "fully_routed": 1195,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t8p700",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2696,
+            "whs": 0.161,
+            "wns": 0.104
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 349,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.84,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 673,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.24,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 929,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.47,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 283,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.47
+          }
+        },
+        "t8p900": {
+          "closed": true,
+          "fmax_closed_mhz": 112.35955056179775,
+          "fmax_derived_mhz": 113.45586566825504,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 85,
+              "lutram": 0,
+              "luts": 85
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 320,
+              "instances": 0,
+              "logic_luts": 459,
+              "lutram": 256,
+              "luts": 715
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 29,
+              "instances": 1,
+              "logic_luts": 71,
+              "lutram": 0,
+              "luts": 71
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 49,
+              "lutram": 0,
+              "luts": 49
+            }
+          },
+          "path": {
+            "data_path_delay": 8.761,
+            "destination": "u_mult/u_mult/result_reg[6]/D",
+            "logic_delay": 5.113,
+            "logic_level_detail": "DSP48E1=1 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 6,
+            "logic_pct": 58.364,
+            "requirement": 8.9,
+            "route_delay": 3.648,
+            "route_pct": 41.636,
+            "slack": 0.086,
+            "source": "r0_i_15/C"
+          },
+          "period_ns": 8.9,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.011,
+            "static_w": 0.068,
+            "total_w": 0.079
+          },
+          "power_xml": {
+            "dynamic_mw": 10.768,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.010768,
+                "static_a": 0.009553,
+                "total_a": 0.020321,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.4238,
+            "total_mw": 79.1918
+          },
+          "role": "closure_search",
+          "route": {
+            "fully_routed": 1203,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t8p900",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2696,
+            "whs": 0.172,
+            "wns": 0.086
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 349,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.84,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 662,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.18,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 918,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.41,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 283,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.47
+          }
+        },
+        "t9p100": {
+          "closed": true,
+          "fmax_closed_mhz": 109.8901098901099,
+          "fmax_derived_mhz": 113.40440009072353,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 87,
+              "lutram": 0,
+              "luts": 87
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 320,
+              "instances": 0,
+              "logic_luts": 457,
+              "lutram": 256,
+              "luts": 713
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 16,
+              "instances": 1,
+              "logic_luts": 69,
+              "lutram": 0,
+              "luts": 69
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 49,
+              "lutram": 0,
+              "luts": 49
+            }
+          },
+          "path": {
+            "data_path_delay": 8.425,
+            "destination": "w_sum_reg[2]/D",
+            "logic_delay": 2.476,
+            "logic_level_detail": "CARRY4=3 LUT3=2 LUT4=1 LUT6=4",
+            "logic_levels": 10,
+            "logic_pct": 29.389,
+            "requirement": 9.1,
+            "route_delay": 5.949,
+            "route_pct": 70.611,
+            "slack": 0.282,
+            "source": "FSM_onehot_state_reg[21]/C"
+          },
+          "period_ns": 9.1,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.01,
+            "static_w": 0.068,
+            "total_w": 0.079
+          },
+          "power_xml": {
+            "dynamic_mw": 10.14,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.01014,
+                "static_a": 0.009552,
+                "total_a": 0.019692,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.42280000000001,
+            "total_mw": 78.56280000000001
+          },
+          "role": "closure_search",
+          "route": {
+            "fully_routed": 1190,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t9p100",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2695,
+            "whs": 0.168,
+            "wns": 0.282
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 336,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.81,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 660,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.17,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 916,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.4,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 283,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.47
+          }
+        },
+        "t9p300": {
+          "closed": true,
+          "fmax_closed_mhz": 107.5268817204301,
+          "fmax_derived_mhz": 111.33377866844799,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 86,
+              "lutram": 0,
+              "luts": 86
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 320,
+              "instances": 0,
+              "logic_luts": 455,
+              "lutram": 256,
+              "luts": 711
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 29,
+              "instances": 1,
+              "logic_luts": 72,
+              "lutram": 0,
+              "luts": 72
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 49,
+              "lutram": 0,
+              "luts": 49
+            }
+          },
+          "path": {
+            "data_path_delay": 8.977,
+            "destination": "u_mult/u_mult/result_reg[10]/D",
+            "logic_delay": 4.855,
+            "logic_level_detail": "DSP48E1=1 LUT2=1 LUT3=1 LUT5=1 LUT6=1",
+            "logic_levels": 5,
+            "logic_pct": 54.083,
+            "requirement": 9.3,
+            "route_delay": 4.122,
+            "route_pct": 45.917,
+            "slack": 0.318,
+            "source": "r0_i_15/C"
+          },
+          "period_ns": 9.3,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.01,
+            "static_w": 0.068,
+            "total_w": 0.079
+          },
+          "power_xml": {
+            "dynamic_mw": 10.286999999999999,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.010287,
+                "static_a": 0.009552,
+                "total_a": 0.019839,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.42280000000001,
+            "total_mw": 78.7098
+          },
+          "role": "closure_search",
+          "route": {
+            "fully_routed": 1201,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t9p300",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2696,
+            "whs": 0.196,
+            "wns": 0.318
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 349,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.84,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 658,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.16,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 914,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.39,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 284,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.48
+          }
+        },
+        "t9p500": {
+          "closed": true,
+          "fmax_closed_mhz": 105.26315789473684,
+          "fmax_derived_mhz": 110.08366358432409,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 87,
+              "lutram": 0,
+              "luts": 87
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 320,
+              "instances": 0,
+              "logic_luts": 452,
+              "lutram": 256,
+              "luts": 708
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 16,
+              "instances": 1,
+              "logic_luts": 68,
+              "lutram": 0,
+              "luts": 68
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 49,
+              "lutram": 0,
+              "luts": 49
+            }
+          },
+          "path": {
+            "data_path_delay": 9.029,
+            "destination": "wa_reg[1]/D",
+            "logic_delay": 1.71,
+            "logic_level_detail": "LUT3=1 LUT4=1 LUT5=2 LUT6=4 RAMD64E=1",
+            "logic_levels": 9,
+            "logic_pct": 18.94,
+            "requirement": 9.5,
+            "route_delay": 7.319,
+            "route_pct": 81.06,
+            "slack": 0.416,
+            "source": "FSM_onehot_state_reg[30]/C"
+          },
+          "period_ns": 9.5,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.01,
+            "static_w": 0.068,
+            "total_w": 0.078
+          },
+          "power_xml": {
+            "dynamic_mw": 9.782,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.009782,
+                "static_a": 0.009551,
+                "total_a": 0.019334,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.4218,
+            "total_mw": 78.2048
+          },
+          "role": "closure_search",
+          "route": {
+            "fully_routed": 1185,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t9p500",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2695,
+            "whs": 0.149,
+            "wns": 0.416
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 336,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.81,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 653,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.14,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 909,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.37,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 277,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.4
+          }
+        }
+      }
+    },
+    "shared_pe": {
+      "at_10ns": "t10p000",
+      "closed": "t13p418",
+      "closure_search": [
+        "t10p000",
+        "t13p061",
+        "t13p418"
+      ],
+      "runs": {
+        "saif_t13p798": {
+          "closed": true,
+          "fmax_closed_mhz": 72.47427163357008,
+          "fmax_derived_mhz": 72.89161017566879,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 85,
+              "lutram": 0,
+              "luts": 85
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 319,
+              "instances": 0,
+              "logic_luts": 449,
+              "lutram": 256,
+              "luts": 705
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 14,
+              "instances": 1,
+              "logic_luts": 59,
+              "lutram": 0,
+              "luts": 59
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 49,
+              "lutram": 0,
+              "luts": 49
+            }
+          },
+          "path": {
+            "data_path_delay": 13.753,
+            "destination": "u_mult/u_mult/result_reg[10]/D",
+            "logic_delay": 8.995,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 65.402,
+            "requirement": 13.798,
+            "route_delay": 4.758,
+            "route_pct": 34.598,
+            "slack": 0.079,
+            "source": "u_mult/u_mult/prod_r0/CLK"
+          },
+          "period_ns": 13.798,
+          "power_text": {
+            "activity_file": "SAIF",
+            "confidence": "Medium",
+            "dynamic_w": 0.005,
+            "nets_matched": 301,
+            "nets_matched_pct": 19.074778200253487,
+            "nets_total": 1578,
+            "static_w": 0.068,
+            "total_w": 0.073
+          },
+          "power_xml": {
+            "dynamic_mw": 4.796,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012615,
+                "total_a": 0.012615,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000161,
+                "total_a": 0.000161,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.004796,
+                "static_a": 0.009542,
+                "total_a": 0.014338,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.41,
+            "total_mw": 73.206
+          },
+          "role": "saif",
+          "route": {
+            "fully_routed": 1171,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "saif_t13p798",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2667,
+            "whs": 0.17,
+            "wns": 0.079
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 333,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.8,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 639,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.07,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 895,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.3,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 278,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.41
+          }
+        },
+        "saifrand_t13p798": {
+          "closed": true,
+          "fmax_closed_mhz": 72.47427163357008,
+          "fmax_derived_mhz": 72.89161017566879,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 85,
+              "lutram": 0,
+              "luts": 85
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 319,
+              "instances": 0,
+              "logic_luts": 449,
+              "lutram": 256,
+              "luts": 705
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 14,
+              "instances": 1,
+              "logic_luts": 59,
+              "lutram": 0,
+              "luts": 59
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 49,
+              "lutram": 0,
+              "luts": 49
+            }
+          },
+          "path": {
+            "data_path_delay": 13.753,
+            "destination": "u_mult/u_mult/result_reg[10]/D",
+            "logic_delay": 8.995,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 65.402,
+            "requirement": 13.798,
+            "route_delay": 4.758,
+            "route_pct": 34.598,
+            "slack": 0.079,
+            "source": "u_mult/u_mult/prod_r0/CLK"
+          },
+          "period_ns": 13.798,
+          "power_text": {
+            "activity_file": "SAIF",
+            "confidence": "Medium",
+            "dynamic_w": 0.006,
+            "nets_matched": 301,
+            "nets_matched_pct": 19.074778200253487,
+            "nets_total": 1578,
+            "static_w": 0.068,
+            "total_w": 0.074
+          },
+          "power_xml": {
+            "dynamic_mw": 5.7,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012615,
+                "total_a": 0.012615,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.0057,
+                "static_a": 0.009544,
+                "total_a": 0.015244,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.41300000000001,
+            "total_mw": 74.113
+          },
+          "role": "saif_random_stimulus",
+          "route": {
+            "fully_routed": 1171,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "saifrand_t13p798",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2667,
+            "whs": 0.17,
+            "wns": 0.079
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 333,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.8,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 639,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.07,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 895,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.3,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 278,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.41
+          }
+        },
+        "t10p000": {
+          "closed": false,
+          "fmax_closed_mhz": null,
+          "fmax_derived_mhz": 76.85804319422029,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 85,
+              "lutram": 0,
+              "luts": 85
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 319,
+              "instances": 0,
+              "logic_luts": 449,
+              "lutram": 256,
+              "luts": 705
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 38,
+              "instances": 1,
+              "logic_luts": 71,
+              "lutram": 0,
+              "luts": 71
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 49,
+              "lutram": 0,
+              "luts": 49
+            }
+          },
+          "path": {
+            "data_path_delay": 12.956,
+            "destination": "u_mult/u_mult/result_reg[5]/D",
+            "logic_delay": 8.758,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT4=1 LUT5=1 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 67.597,
+            "requirement": 10.0,
+            "route_delay": 4.198,
+            "route_pct": 32.403,
+            "slack": -3.011,
+            "source": "r0_i_1/C"
+          },
+          "period_ns": 10.0,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.009,
+            "static_w": 0.068,
+            "total_w": 0.078
+          },
+          "power_xml": {
+            "dynamic_mw": 9.084,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.009084,
+                "static_a": 0.00955,
+                "total_a": 0.018634,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.42080000000001,
+            "total_mw": 77.5048
+          },
+          "role": "at_10ns",
+          "route": {
+            "fully_routed": 1191,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "slack_endpoints": 2000,
+          "tag": "t10p000",
+          "timing": {
+            "constraints_met": false,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": -35.102,
+            "tns_failing_endpoints": 18,
+            "total_endpoints": 2690,
+            "whs": 0.179,
+            "wns": -3.011
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 357,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.86,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 651,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.13,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 907,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.36,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 290,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.56
+          }
+        },
+        "t13p061": {
+          "closed": false,
+          "fmax_closed_mhz": null,
+          "fmax_derived_mhz": 74.80550568521844,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 85,
+              "lutram": 0,
+              "luts": 85
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 319,
+              "instances": 0,
+              "logic_luts": 450,
+              "lutram": 256,
+              "luts": 706
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 38,
+              "instances": 1,
+              "logic_luts": 70,
+              "lutram": 0,
+              "luts": 70
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 49,
+              "lutram": 0,
+              "luts": 49
+            }
+          },
+          "path": {
+            "data_path_delay": 13.315,
+            "destination": "u_mult/u_mult/result_reg[2]/D",
+            "logic_delay": 8.82,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 66.24,
+            "requirement": 13.061,
+            "route_delay": 4.495,
+            "route_pct": 33.76,
+            "slack": -0.307,
+            "source": "r0_i_1/C"
+          },
+          "period_ns": 13.061,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.007,
+            "static_w": 0.068,
+            "total_w": 0.075
+          },
+          "power_xml": {
+            "dynamic_mw": 6.987,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.006987,
+                "static_a": 0.009546,
+                "total_a": 0.016533,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.41680000000001,
+            "total_mw": 75.4038
+          },
+          "role": "closure_search",
+          "route": {
+            "fully_routed": 1191,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t13p061",
+          "timing": {
+            "constraints_met": false,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": -1.781,
+            "tns_failing_endpoints": 8,
+            "total_endpoints": 2690,
+            "whs": 0.174,
+            "wns": -0.307
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 357,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.86,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 651,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.13,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 907,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.36,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 289,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.55
+          }
+        },
+        "t13p418": {
+          "closed": true,
+          "fmax_closed_mhz": 74.52675510508273,
+          "fmax_derived_mhz": 74.64914899970141,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 85,
+              "lutram": 0,
+              "luts": 85
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 319,
+              "instances": 0,
+              "logic_luts": 449,
+              "lutram": 256,
+              "luts": 705
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 38,
+              "instances": 1,
+              "logic_luts": 68,
+              "lutram": 0,
+              "luts": 68
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 49,
+              "lutram": 0,
+              "luts": 49
+            }
+          },
+          "path": {
+            "data_path_delay": 13.343,
+            "destination": "u_mult/u_mult/result_reg[8]/D",
+            "logic_delay": 8.82,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 66.101,
+            "requirement": 13.418,
+            "route_delay": 4.523,
+            "route_pct": 33.899,
+            "slack": 0.022,
+            "source": "r0_i_1/C"
+          },
+          "period_ns": 13.418,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.007,
+            "static_w": 0.068,
+            "total_w": 0.075
+          },
+          "power_xml": {
+            "dynamic_mw": 6.801,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.006801,
+                "static_a": 0.009546,
+                "total_a": 0.016347,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.41680000000001,
+            "total_mw": 75.21780000000001
+          },
+          "role": "closed",
+          "route": {
+            "fully_routed": 1190,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "t13p418",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2690,
+            "whs": 0.158,
+            "wns": 0.022
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 357,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.86,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 647,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.11,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 903,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.34,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 276,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.39
+          }
+        },
+        "vecless_t13p798": {
+          "closed": true,
+          "fmax_closed_mhz": 72.47427163357008,
+          "fmax_derived_mhz": 72.89161017566879,
+          "hier": {
+            "Adder(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 85,
+              "lutram": 0,
+              "luts": 85
+            },
+            "Control + storage": {
+              "dsp": 0,
+              "ffs": 319,
+              "instances": 0,
+              "logic_luts": 449,
+              "lutram": 256,
+              "luts": 705
+            },
+            "Multiplier(s)": {
+              "dsp": 3,
+              "ffs": 14,
+              "instances": 1,
+              "logic_luts": 59,
+              "lutram": 0,
+              "luts": 59
+            },
+            "Subtractor(s)": {
+              "dsp": 0,
+              "ffs": 0,
+              "instances": 1,
+              "logic_luts": 49,
+              "lutram": 0,
+              "luts": 49
+            }
+          },
+          "path": {
+            "data_path_delay": 13.753,
+            "destination": "u_mult/u_mult/result_reg[10]/D",
+            "logic_delay": 8.995,
+            "logic_level_detail": "DSP48E1=2 LUT2=1 LUT3=1 LUT5=2 LUT6=1",
+            "logic_levels": 7,
+            "logic_pct": 65.402,
+            "requirement": 13.798,
+            "route_delay": 4.758,
+            "route_pct": 34.598,
+            "slack": 0.079,
+            "source": "u_mult/u_mult/prod_r0/CLK"
+          },
+          "period_ns": 13.798,
+          "power_text": {
+            "activity_file": "none (vectorless)",
+            "confidence": "Medium",
+            "dynamic_w": 0.006,
+            "static_w": 0.068,
+            "total_w": 0.075
+          },
+          "power_xml": {
+            "dynamic_mw": 6.489,
+            "rails": {
+              "MGTAVcc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.0
+              },
+              "MGTAVtt": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vccadc": {
+                "dynamic_a": 0.0,
+                "static_a": 0.02,
+                "total_a": 0.02,
+                "voltage": 1.8
+              },
+              "Vccaux": {
+                "dynamic_a": 0.0,
+                "static_a": 0.012616,
+                "total_a": 0.012616,
+                "voltage": 1.8
+              },
+              "Vccaux_io": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vccbram": {
+                "dynamic_a": 0.0,
+                "static_a": 0.000162,
+                "total_a": 0.000162,
+                "voltage": 1.0
+              },
+              "Vccint": {
+                "dynamic_a": 0.006489,
+                "static_a": 0.009545,
+                "total_a": 0.016034,
+                "voltage": 1.0
+              },
+              "Vcco12": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.2
+              },
+              "Vcco135": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.35
+              },
+              "Vcco15": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.5
+              },
+              "Vcco18": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 1.8
+              },
+              "Vcco25": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 2.5
+              },
+              "Vcco33": {
+                "dynamic_a": 0.0,
+                "static_a": 0.0,
+                "total_a": 0.0,
+                "voltage": 3.3
+              }
+            },
+            "static_mw": 68.4158,
+            "total_mw": 74.90480000000001
+          },
+          "role": "vecless_common",
+          "route": {
+            "fully_routed": 1171,
+            "routing_errors": 0,
+            "unrouted": null
+          },
+          "tag": "vecless_t13p798",
+          "timing": {
+            "constraints_met": true,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "7a35t-cpg236",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "ths": 0.0,
+            "ths_failing_endpoints": 0,
+            "tns": 0.0,
+            "tns_failing_endpoints": 0,
+            "total_endpoints": 2667,
+            "whs": 0.17,
+            "wns": 0.079
+          },
+          "util": {
+            "bram36": 0,
+            "bram36_available": 50.0,
+            "bram36_util_pct": 0.0,
+            "dsp": 3,
+            "dsp_available": 90.0,
+            "dsp_util_pct": 3.33,
+            "ffs": 333,
+            "ffs_available": 41600.0,
+            "ffs_util_pct": 0.8,
+            "header": {
+              "design": "ntt_core_shared",
+              "device": "xc7a35tcpg236-1",
+              "state": "Routed",
+              "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+            },
+            "lut_logic": 639,
+            "lut_logic_available": 20800.0,
+            "lut_logic_util_pct": 3.07,
+            "lut_memory": 256,
+            "lut_memory_available": 9600.0,
+            "lut_memory_util_pct": 2.67,
+            "luts": 895,
+            "luts_available": 20800.0,
+            "luts_util_pct": 4.3,
+            "ramb18": 0,
+            "ramb18_available": 100.0,
+            "ramb18_util_pct": 0.0,
+            "ramb36": 0,
+            "ramb36_available": 50.0,
+            "ramb36_util_pct": 0.0,
+            "slices": 278,
+            "slices_available": 8150.0,
+            "slices_util_pct": 3.41
+          }
+        }
+      },
+      "saif": "saif_t13p798",
+      "saif_random_stimulus": "saifrand_t13p798",
+      "vecless_common": "vecless_t13p798"
+    }
+  },
+  "reports_dir": "reports/raw/vivado",
+  "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
+}

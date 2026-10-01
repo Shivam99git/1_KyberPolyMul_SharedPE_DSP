@@ -1,0 +1,89 @@
+design,run,role,module_group,total_luts,logic_luts,lutram,ffs,dsp48e1,instances
+shared_pe,t10p000,at_10ns,Control + storage,705,449,256,319,0,0
+shared_pe,t10p000,at_10ns,Multiplier(s),71,71,0,38,3,1
+shared_pe,t10p000,at_10ns,Adder(s),85,85,0,0,0,1
+shared_pe,t10p000,at_10ns,Subtractor(s),49,49,0,0,0,1
+shared_pe,t13p061,closure_search,Control + storage,706,450,256,319,0,0
+shared_pe,t13p061,closure_search,Multiplier(s),70,70,0,38,3,1
+shared_pe,t13p061,closure_search,Adder(s),85,85,0,0,0,1
+shared_pe,t13p061,closure_search,Subtractor(s),49,49,0,0,0,1
+shared_pe,t13p418,closed,Control + storage,705,449,256,319,0,0
+shared_pe,t13p418,closed,Multiplier(s),68,68,0,38,3,1
+shared_pe,t13p418,closed,Adder(s),85,85,0,0,0,1
+shared_pe,t13p418,closed,Subtractor(s),49,49,0,0,0,1
+shared_pe,saif_t13p798,saif,Control + storage,705,449,256,319,0,0
+shared_pe,saif_t13p798,saif,Multiplier(s),59,59,0,14,3,1
+shared_pe,saif_t13p798,saif,Adder(s),85,85,0,0,0,1
+shared_pe,saif_t13p798,saif,Subtractor(s),49,49,0,0,0,1
+shared_pe,saifrand_t13p798,saif_random_stimulus,Control + storage,705,449,256,319,0,0
+shared_pe,saifrand_t13p798,saif_random_stimulus,Multiplier(s),59,59,0,14,3,1
+shared_pe,saifrand_t13p798,saif_random_stimulus,Adder(s),85,85,0,0,0,1
+shared_pe,saifrand_t13p798,saif_random_stimulus,Subtractor(s),49,49,0,0,0,1
+shared_pe,vecless_t13p798,vecless_common,Control + storage,705,449,256,319,0,0
+shared_pe,vecless_t13p798,vecless_common,Multiplier(s),59,59,0,14,3,1
+shared_pe,vecless_t13p798,vecless_common,Adder(s),85,85,0,0,0,1
+shared_pe,vecless_t13p798,vecless_common,Subtractor(s),49,49,0,0,0,1
+per_phase_baseline,t10p000,at_10ns,Control + storage,731,475,256,322,0,0
+per_phase_baseline,t10p000,at_10ns,Multiplier(s),278,278,0,152,12,4
+per_phase_baseline,t10p000,at_10ns,Adder(s),184,184,0,0,0,4
+per_phase_baseline,t10p000,at_10ns,Subtractor(s),63,63,0,0,0,2
+per_phase_baseline,t13p459,closure_search,Control + storage,725,469,256,322,0,0
+per_phase_baseline,t13p459,closure_search,Multiplier(s),263,263,0,152,12,4
+per_phase_baseline,t13p459,closure_search,Adder(s),184,184,0,0,0,4
+per_phase_baseline,t13p459,closure_search,Subtractor(s),63,63,0,0,0,2
+per_phase_baseline,t13p601,closure_search,Control + storage,725,469,256,322,0,0
+per_phase_baseline,t13p601,closure_search,Multiplier(s),228,228,0,104,12,4
+per_phase_baseline,t13p601,closure_search,Adder(s),184,184,0,0,0,4
+per_phase_baseline,t13p601,closure_search,Subtractor(s),63,63,0,0,0,2
+per_phase_baseline,t13p798,closed,Control + storage,725,469,256,322,0,0
+per_phase_baseline,t13p798,closed,Multiplier(s),241,241,0,152,12,4
+per_phase_baseline,t13p798,closed,Adder(s),184,184,0,0,0,4
+per_phase_baseline,t13p798,closed,Subtractor(s),63,63,0,0,0,2
+per_phase_baseline,saif_t13p798,saif,Control + storage,725,469,256,322,0,0
+per_phase_baseline,saif_t13p798,saif,Multiplier(s),241,241,0,152,12,4
+per_phase_baseline,saif_t13p798,saif,Adder(s),184,184,0,0,0,4
+per_phase_baseline,saif_t13p798,saif,Subtractor(s),63,63,0,0,0,2
+per_phase_baseline,saifrand_t13p798,saif_random_stimulus,Control + storage,725,469,256,322,0,0
+per_phase_baseline,saifrand_t13p798,saif_random_stimulus,Multiplier(s),241,241,0,152,12,4
+per_phase_baseline,saifrand_t13p798,saif_random_stimulus,Adder(s),184,184,0,0,0,4
+per_phase_baseline,saifrand_t13p798,saif_random_stimulus,Subtractor(s),63,63,0,0,0,2
+per_phase_baseline,vecless_t13p798,vecless_common,Control + storage,725,469,256,322,0,0
+per_phase_baseline,vecless_t13p798,vecless_common,Multiplier(s),241,241,0,152,12,4
+per_phase_baseline,vecless_t13p798,vecless_common,Adder(s),184,184,0,0,0,4
+per_phase_baseline,vecless_t13p798,vecless_common,Subtractor(s),63,63,0,0,0,2
+pipelined_barrett,t10p000,at_10ns,Control + storage,709,453,256,320,0,0
+pipelined_barrett,t10p000,at_10ns,Multiplier(s),68,68,0,16,3,1
+pipelined_barrett,t10p000,at_10ns,Adder(s),85,85,0,0,0,1
+pipelined_barrett,t10p000,at_10ns,Subtractor(s),49,49,0,0,0,1
+pipelined_barrett,t9p500,closure_search,Control + storage,708,452,256,320,0,0
+pipelined_barrett,t9p500,closure_search,Multiplier(s),68,68,0,16,3,1
+pipelined_barrett,t9p500,closure_search,Adder(s),87,87,0,0,0,1
+pipelined_barrett,t9p500,closure_search,Subtractor(s),49,49,0,0,0,1
+pipelined_barrett,t9p300,closure_search,Control + storage,711,455,256,320,0,0
+pipelined_barrett,t9p300,closure_search,Multiplier(s),72,72,0,29,3,1
+pipelined_barrett,t9p300,closure_search,Adder(s),86,86,0,0,0,1
+pipelined_barrett,t9p300,closure_search,Subtractor(s),49,49,0,0,0,1
+pipelined_barrett,t9p100,closure_search,Control + storage,713,457,256,320,0,0
+pipelined_barrett,t9p100,closure_search,Multiplier(s),69,69,0,16,3,1
+pipelined_barrett,t9p100,closure_search,Adder(s),87,87,0,0,0,1
+pipelined_barrett,t9p100,closure_search,Subtractor(s),49,49,0,0,0,1
+pipelined_barrett,t8p900,closure_search,Control + storage,715,459,256,320,0,0
+pipelined_barrett,t8p900,closure_search,Multiplier(s),71,71,0,29,3,1
+pipelined_barrett,t8p900,closure_search,Adder(s),85,85,0,0,0,1
+pipelined_barrett,t8p900,closure_search,Subtractor(s),49,49,0,0,0,1
+pipelined_barrett,t8p700,closure_search,Control + storage,720,464,256,320,0,0
+pipelined_barrett,t8p700,closure_search,Multiplier(s),76,76,0,29,3,1
+pipelined_barrett,t8p700,closure_search,Adder(s),87,87,0,0,0,1
+pipelined_barrett,t8p700,closure_search,Subtractor(s),49,49,0,0,0,1
+pipelined_barrett,t8p500,closure_search,Control + storage,719,463,256,320,0,0
+pipelined_barrett,t8p500,closure_search,Multiplier(s),77,77,0,29,3,1
+pipelined_barrett,t8p500,closure_search,Adder(s),87,87,0,0,0,1
+pipelined_barrett,t8p500,closure_search,Subtractor(s),51,51,0,0,0,1
+pipelined_barrett,t8p300,closed,Control + storage,721,465,256,320,0,0
+pipelined_barrett,t8p300,closed,Multiplier(s),77,77,0,29,3,1
+pipelined_barrett,t8p300,closed,Adder(s),87,87,0,0,0,1
+pipelined_barrett,t8p300,closed,Subtractor(s),56,56,0,0,0,1
+pipelined_barrett,t8p100,closure_search,Control + storage,721,465,256,320,0,0
+pipelined_barrett,t8p100,closure_search,Multiplier(s),77,77,0,29,3,1
+pipelined_barrett,t8p100,closure_search,Adder(s),87,87,0,0,0,1
+pipelined_barrett,t8p100,closure_search,Subtractor(s),62,62,0,0,0,1

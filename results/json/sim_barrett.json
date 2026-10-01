@@ -1,0 +1,23 @@
+{
+  "design": "common",
+  "experiment": "barrett",
+  "log": "reports/raw/sim/sim_barrett.log",
+  "pass": true,
+  "pipelined": {
+    "max_input": 16777215,
+    "max_pre_correction_remainder": 5713,
+    "min_input": 0,
+    "mismatches": 0,
+    "tested": 16777216
+  },
+  "primary": {
+    "max_input": 16777215,
+    "max_pre_correction_remainder": 5713,
+    "min_input": 0,
+    "mismatches": 0,
+    "tested": 16777216
+  },
+  "seconds": 0.0,
+  "source": "archived log",
+  "tool_exit_code": 0
+}

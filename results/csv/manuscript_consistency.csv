@@ -1,0 +1,205 @@
+status,id,expected,generated,tolerance,manuscript_ref,stage,note,section
+PASS,functional_tests,256,256,0,"Sec. V, Table IV",sim,,functional
+PASS,functional_coefficients,65536,65536,0,"Sec. V, abstract",sim,,functional
+PASS,functional_mismatches,0,0,0,"Sec. V, abstract",sim,,functional
+PASS,functional_mismatches_baseline,0,0,0,Sec. VI-A,sim,,functional
+PASS,functional_mismatches_pipelined,0,0,0,Sec. VI-B,sim,,functional
+PASS,reference_model_mismatches,0,0,0,Sec. V,python,,functional
+PASS,known_answer_identities,4,4,0,Table IV,python,,functional
+PASS,barrett_inputs,16777216,16777216,0,"Sec. V, Table IV",python,,barrett
+PASS,barrett_mismatches,0,0,0,Table IV,python,,barrett
+PASS,barrett_rtl_mismatches_primary,0,0,0,Table IV,sim,,barrett
+PASS,barrett_rtl_mismatches_pipelined,0,0,0,Table IV,sim,,barrett
+PASS,barrett_constants,"K=24,M=5039","K=24,M=5039",0,Sec. III,python,,barrett
+PASS,primary_cycles,27269,27269,0,"Eq. 3, Table III/V/VI",sim,,cycles
+PASS,primary_cycles_difference,0,0,0,Eq. 3,sim,,cycles
+PASS,pipelined_cycles,30853,30853,0,"Eq. 3, Table III/V/VI",sim,,cycles
+PASS,pipelined_cycles_difference,0,0,0,Eq. 3,sim,,cycles
+PASS,baseline_cycles,27269,27269,0,"Eq. 3, Table III/V/VI",sim,,cycles
+PASS,baseline_cycles_difference,0,0,0,Eq. 3,sim,,cycles
+PASS,cycles_fwd_ntt_c3,14336,14336,0,Table III,sim,,cycles
+PASS,cycles_fwd_ntt_c4,16128,16128,0,Table III,sim,,cycles
+PASS,cycles_pwm_c3,3072,3072,0,Table III,sim,,cycles
+PASS,cycles_pwm_c4,3712,3712,0,Table III,sim,,cycles
+PASS,cycles_inv_ntt_c3,8064,8064,0,Table III,sim,,cycles
+PASS,cycles_inv_ntt_c4,8960,8960,0,Table III,sim,,cycles
+PASS,cycles_scaling_c3,1792,1792,0,Table III,sim,,cycles
+PASS,cycles_scaling_c4,2048,2048,0,Table III,sim,,cycles
+PASS,cycles_init_done_c3,5,5,0,Table III,sim,,cycles
+PASS,cycles_init_done_c4,5,5,0,Table III,sim,,cycles
+PASS,multiplier_issues,3584,3584,0,Table III,sim,,cycles
+PASS,pipelining_cycle_penalty_pct,13.1,13.14312956104001,0.05,Table VI,sim,,cycles
+PASS,ct_vectors_shared_pe,256,256,0,Sec. V-A,sim,,constant_time
+PASS,ct_length_shared_pe,27269,27269,0,Sec. V-A,sim,,constant_time
+PASS,ct_length_invariant_shared_pe,True,True,0,Sec. V-A,sim,,constant_time
+PASS,ct_control_invariant_shared_pe,True,True,0,Sec. V-A,sim,,constant_time
+PASS,ct_address_invariant_shared_pe,True,True,0,Sec. V-A,sim,,constant_time
+PASS,ct_vectors_pipelined_barrett,256,256,0,Sec. V-A,sim,,constant_time
+PASS,ct_length_pipelined_barrett,30853,30853,0,Sec. V-A,sim,,constant_time
+PASS,ct_length_invariant_pipelined_barrett,True,True,0,Sec. V-A,sim,,constant_time
+PASS,ct_control_invariant_pipelined_barrett,True,True,0,Sec. V-A,sim,,constant_time
+PASS,ct_address_invariant_pipelined_barrett,True,True,0,Sec. V-A,sim,,constant_time
+PASS,ct_vectors_per_phase_baseline,256,256,0,Sec. V-A,sim,,constant_time
+PASS,ct_length_per_phase_baseline,27269,27269,0,Sec. V-A,sim,,constant_time
+PASS,ct_length_invariant_per_phase_baseline,True,True,0,Sec. V-A,sim,,constant_time
+PASS,ct_control_invariant_per_phase_baseline,True,True,0,Sec. V-A,sim,,constant_time
+PASS,ct_address_invariant_per_phase_baseline,True,True,0,Sec. V-A,sim,,constant_time
+PASS,shared_luts,907,907,0,Table V/VI,vivado,,resources
+PASS,shared_lut_logic,651,651,0,Table V/VI,vivado,,resources
+PASS,shared_lut_memory,256,256,0,Table V/VI,vivado,,resources
+PASS,shared_ffs,357,357,0,Table V/VI,vivado,,resources
+PASS,shared_slices,290,290,0,Table V/VI,vivado,,resources
+PASS,shared_dsp,3,3,0,Table V/VI,vivado,,resources
+PASS,shared_bram36,0,0,0,Table V/VI,vivado,,resources
+PASS,shared_lut_util_pct,4.4,4.36,0.05,Table V/VI,vivado,,resources
+PASS,shared_dsp_util_pct,3.3,3.33,0.05,Table V/VI,vivado,,resources
+PASS,baseline_luts,1250,1250,0,Table V/VI,vivado,,resources
+PASS,baseline_lut_logic,994,994,0,Table V/VI,vivado,,resources
+PASS,baseline_lut_memory,256,256,0,Table V/VI,vivado,,resources
+PASS,baseline_ffs,474,474,0,Table V/VI,vivado,,resources
+PASS,baseline_slices,406,406,0,Table V/VI,vivado,,resources
+PASS,baseline_dsp,12,12,0,Table V/VI,vivado,,resources
+PASS,baseline_bram36,0,0,0,Table V/VI,vivado,,resources
+PASS,baseline_lut_util_pct,6.0,6.01,0.05,Table V/VI,vivado,,resources
+PASS,baseline_dsp_util_pct,13.3,13.33,0.05,Table V/VI,vivado,,resources
+PASS,pipelined_luts,908,908,0,Table V/VI,vivado,,resources
+PASS,pipelined_ffs,336,336,0,Table V/VI,vivado,,resources
+PASS,pipelined_dsp,3,3,0,Table V/VI,vivado,,resources
+PASS,pipelined_bram36,0,0,0,Table V/VI,vivado,,resources
+PASS,shared_dsp_reduction_pct,-75.0,-75.0,0.05,"Table V, abstract",vivado,,resources
+PASS,shared_luts_reduction_pct,-27.4,-27.439999999999998,0.05,Table V,vivado,,resources
+PASS,shared_lut_logic_reduction_pct,-34.5,-34.50704225352113,0.05,Table V,vivado,,resources
+PASS,shared_ffs_reduction_pct,-24.7,-24.68354430379747,0.05,Table V,vivado,,resources
+PASS,shared_slices_reduction_pct,-28.6,-28.57142857142857,0.05,Table V,vivado,,resources
+PASS,modular_multipliers_shared,1,1,0,Table V/VIII,vivado,,resources
+PASS,modular_multipliers_baseline,4,4,0,Table V/VIII,vivado,,resources
+PASS,adders_baseline,4,4,0,Table VIII,vivado,,resources
+PASS,subtractors_baseline,2,2,0,Table VIII,vivado,,resources
+PASS,addsub_shared,2,2,0,Table V,vivado,,resources
+PASS,addsub_baseline,6,6,0,Table V,vivado,,resources
+PASS,table8_baseline_control_luts,731,731,0,Table VIII,vivado,,resources
+PASS,table8_baseline_control_dsp,0,0,0,Table VIII,vivado,,resources
+PASS,table8_baseline_multiplier_luts,278,278,0,Table VIII,vivado,,resources
+PASS,table8_baseline_multiplier_dsp,12,12,0,Table VIII,vivado,,resources
+PASS,table8_baseline_adder_luts,184,184,0,Table VIII,vivado,,resources
+PASS,table8_baseline_adder_dsp,0,0,0,Table VIII,vivado,,resources
+PASS,table8_baseline_subtractor_luts,63,63,0,Table VIII,vivado,,resources
+PASS,table8_baseline_subtractor_dsp,0,0,0,Table VIII,vivado,,resources
+PASS,table8_shared_control_luts,705,705,0,Table VIII,vivado,,resources
+PASS,table8_shared_control_dsp,0,0,0,Table VIII,vivado,,resources
+PASS,table8_shared_multiplier_luts,71,71,0,Table VIII,vivado,,resources
+PASS,table8_shared_multiplier_dsp,3,3,0,Table VIII,vivado,,resources
+PASS,table8_shared_adder_luts,85,85,0,Table VIII,vivado,,resources
+PASS,table8_shared_adder_dsp,0,0,0,Table VIII,vivado,,resources
+PASS,table8_shared_subtractor_luts,49,49,0,Table VIII,vivado,,resources
+PASS,table8_shared_subtractor_dsp,0,0,0,Table VIII,vivado,,resources
+PASS,pipelined_mult_ffs,16,16,0,Sec. VI-B,vivado,,resources
+PASS,primary_mult_ffs,38,38,0,Sec. VI-B,vivado,,resources
+PASS,pipelined_lut_change_pct,0.1,0.11025358324145534,0.05,Table VI,vivado,,resources
+PASS,pipelined_ff_change_pct,-5.9,-5.88235294117647,0.05,Table VI,vivado,,resources
+PASS,shared_closed_period,13.418,13.418,0.0005,Table V/VI,vivado,,timing
+PASS,baseline_closed_period,13.798,13.798,0.0005,Table V,vivado,,timing
+PASS,pipelined_closed_period,8.3,8.3,0.0005,Table VI,vivado,,timing
+PASS,shared_fmax_closed,74.5,74.52675510508273,0.05,"Table V, abstract",vivado,,timing
+PASS,baseline_fmax_closed,72.5,72.47427163357008,0.05,Table V,vivado,,timing
+PASS,pipelined_fmax_closed,120.5,120.48192771084337,0.05,"Table VI, abstract",vivado,,timing
+PASS,shared_fmax_derived,76.9,76.85804319422029,0.05,Table V,vivado,,timing
+PASS,baseline_fmax_derived,74.6,74.57677679170706,0.05,Table V,vivado,,timing
+PASS,shared_wns_10ns,-3.011,-3.011,0.0005,Sec. VI-B,vivado,,timing
+PASS,baseline_wns_10ns,-3.409,-3.409,0.0005,Sec. VI-B,vivado,,timing
+PASS,pipelined_wns_10ns,0.503,0.503,0.0005,Sec. VI-B,vivado,,timing
+PASS,pipelined_period_change_pct,-38.1,-38.142793262781325,0.05,Table VI,vivado,,timing
+PASS,pipelined_fmax_ratio,1.62,1.6166265060240963,0.005,"Table VI, abstract",vivado,,timing
+PASS,shared_period_change_pct,-2.8,-2.7540223220756688,0.06,Table V,vivado,,timing
+PASS,shared_fmax_closed_change_pct,2.8,2.832016693993147,0.05,Table V,vivado,,timing
+PASS,shared_fmax_derived_change_pct,3.1,3.0589501191299835,0.05,Table V,vivado,,timing
+PASS,shared_crit_path_total,12.956,12.956,0.0005,Fig. 11a,vivado,,timing
+PASS,shared_crit_path_logic,8.758,8.758,0.0005,Fig. 11a,vivado,,timing
+PASS,shared_crit_path_net,4.198,4.198,0.0005,Fig. 11a,vivado,,timing
+PASS,baseline_crit_path_total,13.356,13.356,0.0005,Fig. 11a,vivado,,timing
+PASS,baseline_crit_path_logic,8.82,8.82,0.0005,Fig. 11a,vivado,,timing
+PASS,baseline_crit_path_net,4.536,4.536,0.0005,Fig. 11a,vivado,,timing
+PASS,slack_within_1ns_pct_shared,0.6,0.6,0.05,Fig. 12,vivado,,timing
+PASS,slack_within_1ns_pct_baseline,2.4,2.4,0.05,Fig. 12,vivado,,timing
+PASS,slack_within_1ns_pct_pipelined,3.4,3.35,0.06,Fig. 12,vivado,,timing
+PASS,slack_within_1ns_n_shared,12,12,0,Fig. 12,vivado,,timing
+PASS,slack_within_1ns_n_baseline,48,48,0,Fig. 12,vivado,,timing
+PASS,slack_within_1ns_n_pipelined,67,67,0,Fig. 12,vivado,,timing
+PASS,slack_gap_shared,2.494,2.4939999999999998,0.0005,Fig. 12 caption,vivado,,timing
+PASS,slack_largest_gap_pipelined,0.26,0.2599999999999998,0.0005,Fig. 12 caption,vivado,,timing
+PASS,pipelined_logic_levels,7,7,0,Sec. VI-B,vivado,,timing
+PASS,pipelined_route_pct,81.0,81.126,0.5,Sec. VI-B,vivado,,timing
+PASS,shared_latency,365.9,365.89544199999995,0.05,"Table V/VI, abstract",vivado,,timing
+PASS,baseline_latency,376.3,376.25766200000004,0.05,Table V,vivado,,timing
+PASS,pipelined_latency,256.1,256.0799,0.05,"Table VI, abstract",vivado,,timing
+PASS,shared_throughput,2733,2733.021200083712,0.5,Table V,vivado,,timing
+PASS,baseline_throughput,2658,2657.7531861663456,0.5,Table V,vivado,,timing
+PASS,shared_latency_change_pct,-2.7,-2.754022322075688,0.06,Table V,vivado,,timing
+PASS,pipelined_latency_change_pct,-30.0,-30.012820438468307,0.05,"Table VI, abstract",vivado,,timing
+PASS,shared_atp,331871,331867.165894,10,Table V,vivado,,timing
+PASS,baseline_atp,470375,470322.0775000001,60,Table V,vivado,,timing
+PASS,atp_change_pct,-29.4,-29.438318596898117,0.05,"Table V, abstract",vivado,,timing
+PASS,shared_dtp,1098,1097.6863259999998,1,Table V,vivado,,timing
+PASS,baseline_dtp,4516,4515.091944000001,1,Table V,vivado,,timing
+PASS,dtp_change_pct,-75.7,-75.68850558051892,0.05,Table V,vivado,,timing
+PASS,baseline_dynamic_mw,11.82,11.816,0.005,Table V,vivado,,power
+PASS,shared_dynamic_mw,9.08,9.084,0.005,Table V,vivado,,power
+PASS,static_mw,68.4,68.42080000000001,0.05,Table V,vivado,,power
+PASS,baseline_total_mw,80.2,80.24080000000001,0.05,Table V,vivado,,power
+PASS,shared_total_mw,77.5,77.5048,0.05,Table V,vivado,,power
+PASS,dynamic_power_change_pct,-23.1,-23.121191604603936,0.05,"Table V, abstract",vivado,,power
+PASS,total_power_change_pct,-3.4,-3.409736692555413,0.05,Table V,vivado,,power
+PASS,shared_energy_uj,28.36,28.358653053121596,0.02,Table V,vivado,,power
+PASS,baseline_energy_uj,30.18,30.191215805009605,0.02,Table V,vivado,,power
+PASS,energy_change_pct,-6.0,-6.0698541049941195,0.1,Table V,vivado,,power
+PASS,shared_edp,10.38,10.376301893396574,0.02,Table V,vivado,,power
+PASS,baseline_edp,11.35,11.359676271730363,0.02,Table V,vivado,,power
+PASS,edp_change_pct,-8.6,-8.656711290100843,0.1,Table V,vivado,,power
+PASS,saif_dynamic_change_pct,-29.3,-29.272968588703723,0.05,Sec. VI-A,vivado,,power
+PASS,tvla_shared_samples,27268,27268,0,Sec. V-B,tvla,,tvla
+PASS,tvla_shared_evaluated,24192,24192,0,Sec. V-B,tvla,,tvla
+PASS,tvla_shared_max_t,73.5,73.50423348641581,0.05,Sec. V-B,tvla,,tvla
+PASS,tvla_shared_above,5511,5511,0,Sec. V-B,tvla,,tvla
+PASS,tvla_shared_pct,22.8,22.780257936507937,0.05,Sec. V-B,tvla,,tvla
+PASS,tvla_baseline_samples,27268,27268,0,Sec. V-B,tvla,,tvla
+PASS,tvla_baseline_evaluated,24192,24192,0,Sec. V-B,tvla,,tvla
+PASS,tvla_baseline_max_t,73.5,73.50423348641581,0.05,Sec. V-B,tvla,,tvla
+PASS,tvla_baseline_above,5511,5511,0,Sec. V-B,tvla,,tvla
+PASS,tvla_baseline_pct,22.8,22.780257936507937,0.05,Sec. V-B,tvla,,tvla
+PASS,tvla_null_max_t,4.5,4.498140342064592,0.005,Sec. V-B,tvla,,tvla
+PASS,tvla_null_above,0,0,0,Sec. V-B,tvla,,tvla
+PASS,tvla_traces_per_group,400,400,0,Sec. V-B,tvla,,tvla
+PASS,tvla_undefined_cycles,3076,3076,0,Sec. V-B,tvla,,tvla
+PASS,tvla_diff_cycles,6,6,0,Sec. V-B,tvla,,tvla
+PASS,tvla_diff_max,2.86,2.8615299334357363,0.005,Sec. V-B,tvla,,tvla
+PASS,tvla_diff_pct,0.022,0.022003813994425702,0.0005,Sec. V-B,tvla,,tvla
+PASS,tvla_multi_asrun_tmin,82.1,82.04798951124937,0.1,Sec. V-B,tvla,,tvla
+PASS,tvla_multi_asrun_tmax,87.2,87.22976326768674,0.05,Sec. V-B,tvla,,tvla
+PASS,tvla_multi_asrun_pmin,24.3,24.29728835978836,0.05,Sec. V-B,tvla,,tvla
+PASS,tvla_multi_asrun_pmax,26.7,26.68237433862434,0.05,Sec. V-B,tvla,,tvla
+PASS,tvla_multi_asrun_cycles_differ,6,6,0,Sec. V-B,tvla,,tvla
+WARN,tvla_multi_random_tmin,82.1,49.79534701409773,0.1,Sec. V-B,tvla,"DISCREPANCY: the manuscript describes five independent fixed secrets, but the original script built constant-coefficient polynomials; with independent random secrets the range is lower",tvla
+WARN,tvla_multi_random_tmax,87.2,69.34530180953064,0.05,Sec. V-B,tvla,see tvla_multi_random_tmin,tvla
+WARN,tvla_multi_random_pmin,24.3,21.77992724867725,0.05,Sec. V-B,tvla,see tvla_multi_random_tmin,tvla
+WARN,tvla_multi_random_pmax,26.7,22.34209656084656,0.05,Sec. V-B,tvla,see tvla_multi_random_tmin,tvla
+PASS,shuffle_control_max_t,73.3,73.25656020565131,0.05,Sec. V-C,tvla,,shuffling
+PASS,shuffle_control_above,5530,5530,0,Sec. V-C,tvla,,shuffling
+PASS,shuffle_max_t,6.3,6.344422903950318,0.05,Table (countermeasures),tvla,,shuffling
+PASS,shuffle_above,8,8,0,Table (countermeasures),tvla,,shuffling
+PASS,shuffle_evaluated,27266,27266,0,Table (countermeasures),tvla,,shuffling
+PASS,shuffle_chance,0.19,0.18528191083777928,0.005,Table (countermeasures),tvla,,shuffling
+PASS,shuffle_ff_cost,64,64,0,Sec. V-C,python,,shuffling
+PASS,shuffle_model_runs,650,650,0,Sec. V-C,python,,shuffling
+PASS,shuffle_model_failures,0,0,0,Sec. V-C,python,,shuffling
+PASS,shuffle_rtl_mismatches,0,0,0,Sec. V-C,sim,,shuffling
+PASS,shuffle_rtl_latency,27269,27269,0,Sec. V-C,sim,,shuffling
+PASS,shuffle_schedule_differences,0,0,0,Sec. V-C,python,,shuffling
+PASS,masked_max_t,4.52,4.523705438186009,0.005,Table (countermeasures),tvla,,masking
+PASS,masked_above,1,1,0,Table (countermeasures),tvla,,masking
+PASS,masked_evaluated,48384,48384,0,Table (countermeasures),tvla,,masking
+PASS,masked_chance,0.33,0.3287860329338778,0.005,Table (countermeasures),tvla,,masking
+PASS,masked_null_max_t,4.33,4.329607553215968,0.005,Sec. V-C,tvla,,masking
+PASS,masking_model_runs,250,250,0,Sec. V-C,python,,masking
+PASS,masking_model_failures,0,0,0,Sec. V-C,python,,masking
+PASS,masking_rtl_mismatches,0,0,0,Sec. V-C,sim,,masking
+PASS,masking_latency_ratio,2.0,2.0,0.005,Table (countermeasures),sim,,masking

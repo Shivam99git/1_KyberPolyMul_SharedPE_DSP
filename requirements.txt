@@ -1,0 +1,5 @@
+# Python dependencies of the analysis scripts (tested with the versions in the comments).
+# Python >= 3.8
+numpy>=1.21        # 1.26.4
+scipy>=1.7         # 1.11.4  (normal tail probability in the TVLA analysis)
+matplotlib>=3.5    # 3.6.3   (figures)

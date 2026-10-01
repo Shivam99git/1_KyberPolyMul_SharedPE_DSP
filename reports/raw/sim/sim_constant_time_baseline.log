@@ -1,0 +1,312 @@
+$ xvlog -sv -i <repo>/rtl/common -d ZETA_NTT_MEM="../../../data/test_vectors/zetas_ntt.mem" -d ZETA_BM_MEM="../../../data/test_vectors/zetas_basemul.mem" -d DUT=ntt_core_baseline <repo>/rtl/common/mod_reduce_barrett.v <repo>/rtl/common/mod_addsub.v <repo>/rtl/common/mult_conventional.v <repo>/rtl/common/mult_unit.v <repo>/rtl/common/zeta_rom.v <repo>/rtl/per_phase_baseline/ntt_core_baseline.v <repo>/tb/constant_time/tb_constant_time.v
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/common/mod_reduce_barrett.v" into library work
+INFO: [VRFC 10-311] analyzing module mod_reduce_barrett
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/common/mod_addsub.v" into library work
+INFO: [VRFC 10-311] analyzing module mod_add
+INFO: [VRFC 10-311] analyzing module mod_sub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/common/mult_conventional.v" into library work
+INFO: [VRFC 10-311] analyzing module mult_conventional
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/common/mult_unit.v" into library work
+INFO: [VRFC 10-311] analyzing module mult_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/common/zeta_rom.v" into library work
+INFO: [VRFC 10-311] analyzing module zeta_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/rtl/per_phase_baseline/ntt_core_baseline.v" into library work
+INFO: [VRFC 10-311] analyzing module ntt_core_baseline
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "<repo>/tb/constant_time/tb_constant_time.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_constant_time
+$ xelab tb_constant_time -s snap
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: <home>/Desktop/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab tb_constant_time -s snap 
+Multi-threading is on. Using 18 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.mod_reduce_barrett
+Compiling module work.mult_conventional
+Compiling module work.mult_unit
+Compiling module work.zeta_rom
+Compiling module work.mod_add
+Compiling module work.mod_sub
+Compiling module work.ntt_core_baseline
+Compiling module work.tb_constant_time
+Built simulation snapshot snap
+$ xsim snap -R -testplusarg VEC_DIR=../../../data/test_vectors -testplusarg NUM_VEC=256
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu Oct  1 17:44:06 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/snap/xsim_script.tcl
+# xsim {snap} -testplusarg VEC_DIR=../../../data/test_vectors -testplusarg NUM_VEC=256 -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+CTVEC vec=0 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=5e09c79fe2961142 mmB=0 mmC=0
+CTVEC vec=1 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=563c6e692790c2ad mmB=0 mmC=0
+CTVEC vec=2 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ad2944fc4ae2b087 mmB=0 mmC=0
+CTVEC vec=3 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=d70141666f118804 mmB=0 mmC=0
+CTVEC vec=4 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=05b0e305b2c7f9c4 mmB=0 mmC=0
+CTVEC vec=5 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=7abfd0ea5eeeae44 mmB=0 mmC=0
+CTVEC vec=6 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=7e3c046f4b48c20e mmB=0 mmC=0
+CTVEC vec=7 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=b012ee2188383a40 mmB=0 mmC=0
+CTVEC vec=8 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=70a94bfe9d497bdb mmB=0 mmC=0
+CTVEC vec=9 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=4cefe7ca0790873e mmB=0 mmC=0
+CTVEC vec=10 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=0dc6696cdcdb7dfc mmB=0 mmC=0
+CTVEC vec=11 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=554cc8f6267c2f8d mmB=0 mmC=0
+CTVEC vec=12 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ffa3788360de1fd2 mmB=0 mmC=0
+CTVEC vec=13 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=b60c10ef51422786 mmB=0 mmC=0
+CTVEC vec=14 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=3e2c2e2f73e9dc2e mmB=0 mmC=0
+CTVEC vec=15 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=80ff4d43ae998677 mmB=0 mmC=0
+CTVEC vec=16 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=faa2fdb59d911698 mmB=0 mmC=0
+CTVEC vec=17 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=2b951d87b7faa515 mmB=0 mmC=0
+CTVEC vec=18 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=2c7621fe64ed04b7 mmB=0 mmC=0
+CTVEC vec=19 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=928d5183bd5752a1 mmB=0 mmC=0
+CTVEC vec=20 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=86f9e5a3852c14a5 mmB=0 mmC=0
+CTVEC vec=21 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=5dd49ad863e24084 mmB=0 mmC=0
+CTVEC vec=22 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=f7398395e00fd748 mmB=0 mmC=0
+CTVEC vec=23 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=2787959d98ed3443 mmB=0 mmC=0
+CTVEC vec=24 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=953cdb5e6b590e45 mmB=0 mmC=0
+CTVEC vec=25 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=9afc8dea73729fbb mmB=0 mmC=0
+CTVEC vec=26 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=970093b209e934e0 mmB=0 mmC=0
+CTVEC vec=27 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=5f53921363c4ca36 mmB=0 mmC=0
+CTVEC vec=28 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=9522a34ff6acee8b mmB=0 mmC=0
+CTVEC vec=29 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=92192673a2cb5ce2 mmB=0 mmC=0
+CTVEC vec=30 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=750c5270698631cd mmB=0 mmC=0
+CTVEC vec=31 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=d571ec98629e5d2f mmB=0 mmC=0
+CTVEC vec=32 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=fb386179cdb06639 mmB=0 mmC=0
+CTVEC vec=33 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=89ffb129ce464717 mmB=0 mmC=0
+CTVEC vec=34 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=8ebd1675dac3a9c7 mmB=0 mmC=0
+CTVEC vec=35 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=941522fbc8bca314 mmB=0 mmC=0
+CTVEC vec=36 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=8f9131a8519fc96a mmB=0 mmC=0
+CTVEC vec=37 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=c5e6c394ad426f83 mmB=0 mmC=0
+CTVEC vec=38 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=86685898bbd29a9f mmB=0 mmC=0
+CTVEC vec=39 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ffcbeca2ff6d4979 mmB=0 mmC=0
+CTVEC vec=40 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=8ce20df1d6c0c5e1 mmB=0 mmC=0
+CTVEC vec=41 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=4e8f6aeab5849916 mmB=0 mmC=0
+CTVEC vec=42 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ff37ce3338313e7d mmB=0 mmC=0
+CTVEC vec=43 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=deeed54e03a18e4b mmB=0 mmC=0
+CTVEC vec=44 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=fbd7c28ffd288560 mmB=0 mmC=0
+CTVEC vec=45 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=8eeba57e798be155 mmB=0 mmC=0
+CTVEC vec=46 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=aab4538ac197c98c mmB=0 mmC=0
+CTVEC vec=47 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=8b4ad35dc8d27ef0 mmB=0 mmC=0
+CTVEC vec=48 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=0aac152567035dfb mmB=0 mmC=0
+CTVEC vec=49 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=be6004f2d7daadd1 mmB=0 mmC=0
+CTVEC vec=50 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=12443751177794bc mmB=0 mmC=0
+CTVEC vec=51 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=69739126283a3462 mmB=0 mmC=0
+CTVEC vec=52 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=43165ba3eb78eaf8 mmB=0 mmC=0
+CTVEC vec=53 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=6c02f469366af8ab mmB=0 mmC=0
+CTVEC vec=54 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=e26b28ba4bb36d96 mmB=0 mmC=0
+CTVEC vec=55 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=6c3bb91eaf21c998 mmB=0 mmC=0
+CTVEC vec=56 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=063914b94f5cef89 mmB=0 mmC=0
+CTVEC vec=57 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=0600675d6d87ba6b mmB=0 mmC=0
+CTVEC vec=58 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=4421e4a343ae01a2 mmB=0 mmC=0
+CTVEC vec=59 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=d3783474af325ea3 mmB=0 mmC=0
+CTVEC vec=60 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=a7b2c4eb42dcfc3b mmB=0 mmC=0
+CTVEC vec=61 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=8cb09c9ef3d1db56 mmB=0 mmC=0
+CTVEC vec=62 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=a65b22134aa7b9c9 mmB=0 mmC=0
+CTVEC vec=63 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=e56cbd4a62ae196e mmB=0 mmC=0
+CTVEC vec=64 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=080489a7c4c25165 mmB=0 mmC=0
+CTVEC vec=65 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=a323ea74d3cbd9aa mmB=0 mmC=0
+CTVEC vec=66 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=dc2490939f68cda2 mmB=0 mmC=0
+CTVEC vec=67 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=9b76e43a630eaa7a mmB=0 mmC=0
+CTVEC vec=68 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ebb7d8bb53fd7abf mmB=0 mmC=0
+CTVEC vec=69 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=0e88c853728c2dc2 mmB=0 mmC=0
+CTVEC vec=70 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=2560255e1f94f65d mmB=0 mmC=0
+CTVEC vec=71 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=66e4a7eb142b2548 mmB=0 mmC=0
+CTVEC vec=72 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=97a61843df323b24 mmB=0 mmC=0
+CTVEC vec=73 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=f684a681547b32e2 mmB=0 mmC=0
+CTVEC vec=74 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=3af7776c706f58cf mmB=0 mmC=0
+CTVEC vec=75 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=07c2842ddd137e45 mmB=0 mmC=0
+CTVEC vec=76 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=3eec54f27609fdec mmB=0 mmC=0
+CTVEC vec=77 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=c58dd18afe0b59e8 mmB=0 mmC=0
+CTVEC vec=78 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=5e1ec2f62fc8bb28 mmB=0 mmC=0
+CTVEC vec=79 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=49246d47da4ba659 mmB=0 mmC=0
+CTVEC vec=80 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=06902c4a19d07e97 mmB=0 mmC=0
+CTVEC vec=81 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=4803054ba388cd3d mmB=0 mmC=0
+CTVEC vec=82 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=88b29c68da4b68e2 mmB=0 mmC=0
+CTVEC vec=83 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=b2e947370b726c2e mmB=0 mmC=0
+CTVEC vec=84 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=6b661a36e195290f mmB=0 mmC=0
+CTVEC vec=85 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=1fea7037a7527a97 mmB=0 mmC=0
+CTVEC vec=86 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=9028ebf47a3986cc mmB=0 mmC=0
+CTVEC vec=87 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=521cd0bf8755d130 mmB=0 mmC=0
+CTVEC vec=88 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=a3416d7a65a9b155 mmB=0 mmC=0
+CTVEC vec=89 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=d6d7cfb798d622a4 mmB=0 mmC=0
+CTVEC vec=90 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=793ce7977f25977a mmB=0 mmC=0
+CTVEC vec=91 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=c76a61266d16c90b mmB=0 mmC=0
+CTVEC vec=92 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=b643d1c86c658b91 mmB=0 mmC=0
+CTVEC vec=93 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=9439ca3c8055af0b mmB=0 mmC=0
+CTVEC vec=94 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=3621a9e5f1ff7464 mmB=0 mmC=0
+CTVEC vec=95 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=10ec0e6f9031f0a5 mmB=0 mmC=0
+CTVEC vec=96 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=f8d726b35b1337ca mmB=0 mmC=0
+CTVEC vec=97 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=998594ef4cbc04ff mmB=0 mmC=0
+CTVEC vec=98 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=73605889c0c3c10f mmB=0 mmC=0
+CTVEC vec=99 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=7e1bfea56178751d mmB=0 mmC=0
+CTVEC vec=100 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=7c703dbf53431e31 mmB=0 mmC=0
+CTVEC vec=101 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=446253e0bf448a11 mmB=0 mmC=0
+CTVEC vec=102 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=4fb27b6e8e3da095 mmB=0 mmC=0
+CTVEC vec=103 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=e5f600cffe03b9bd mmB=0 mmC=0
+CTVEC vec=104 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=f6295dd28b9c364f mmB=0 mmC=0
+CTVEC vec=105 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=e57078a33f8f786b mmB=0 mmC=0
+CTVEC vec=106 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=3daca705733c9b28 mmB=0 mmC=0
+CTVEC vec=107 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=13bf88abc3fa2087 mmB=0 mmC=0
+CTVEC vec=108 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=c72cb1afdfd1a611 mmB=0 mmC=0
+CTVEC vec=109 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=1598b753a61e9343 mmB=0 mmC=0
+CTVEC vec=110 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=51245a63c71d602e mmB=0 mmC=0
+CTVEC vec=111 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=5da86c4573ac9f90 mmB=0 mmC=0
+CTVEC vec=112 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=f839a808930d1c08 mmB=0 mmC=0
+CTVEC vec=113 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=62168c86861f55c4 mmB=0 mmC=0
+CTVEC vec=114 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=d0d65df9f9aeb2e0 mmB=0 mmC=0
+CTVEC vec=115 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=6627b71339a81982 mmB=0 mmC=0
+CTVEC vec=116 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=415d80d357b48091 mmB=0 mmC=0
+CTVEC vec=117 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=a9bb6b0246f8e715 mmB=0 mmC=0
+CTVEC vec=118 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=536f5095997953b5 mmB=0 mmC=0
+CTVEC vec=119 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=44c6335ab8b9777d mmB=0 mmC=0
+CTVEC vec=120 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=f720435673f8b9ae mmB=0 mmC=0
+CTVEC vec=121 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=9393f445b8825303 mmB=0 mmC=0
+CTVEC vec=122 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=6c6e126d9cce1d01 mmB=0 mmC=0
+CTVEC vec=123 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=a67e191bfae28e2f mmB=0 mmC=0
+CTVEC vec=124 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=c131e277d34eee1d mmB=0 mmC=0
+CTVEC vec=125 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=0016b0857b279cc8 mmB=0 mmC=0
+CTVEC vec=126 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=d95782ec1ba058b6 mmB=0 mmC=0
+CTVEC vec=127 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=4d5474c14deb7b47 mmB=0 mmC=0
+CTVEC vec=128 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=81aaa979263d4df6 mmB=0 mmC=0
+CTVEC vec=129 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=61f38f180443e6b6 mmB=0 mmC=0
+CTVEC vec=130 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=6b41aa5e6a53f55f mmB=0 mmC=0
+CTVEC vec=131 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=c7baa06d4ab30393 mmB=0 mmC=0
+CTVEC vec=132 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=a30acbbd006b9de3 mmB=0 mmC=0
+CTVEC vec=133 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ac1b884cddde0cdf mmB=0 mmC=0
+CTVEC vec=134 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=7779fcb805481ef7 mmB=0 mmC=0
+CTVEC vec=135 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=88b743c34861a57a mmB=0 mmC=0
+CTVEC vec=136 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=d9434ac5d8e196be mmB=0 mmC=0
+CTVEC vec=137 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=7cf4489b75e4051c mmB=0 mmC=0
+CTVEC vec=138 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=b9ecef7b7e0514dd mmB=0 mmC=0
+CTVEC vec=139 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=41b884be026af767 mmB=0 mmC=0
+CTVEC vec=140 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=1959639ef90ccc9f mmB=0 mmC=0
+CTVEC vec=141 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=edab5ef4ae4ba7ef mmB=0 mmC=0
+CTVEC vec=142 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=185e2d51af12049b mmB=0 mmC=0
+CTVEC vec=143 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ac7d552738e48d53 mmB=0 mmC=0
+CTVEC vec=144 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=957748e17fc4db5c mmB=0 mmC=0
+CTVEC vec=145 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=b7adc4cb9f870a66 mmB=0 mmC=0
+CTVEC vec=146 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=5ea4a85a4395c4bc mmB=0 mmC=0
+CTVEC vec=147 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=65470e5083389dd2 mmB=0 mmC=0
+CTVEC vec=148 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=057c9a838948106a mmB=0 mmC=0
+CTVEC vec=149 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=c8038968a286d383 mmB=0 mmC=0
+CTVEC vec=150 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=17ca7aee26c94173 mmB=0 mmC=0
+CTVEC vec=151 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=19aa1c929d6cace7 mmB=0 mmC=0
+CTVEC vec=152 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=47eddc3b8e842d65 mmB=0 mmC=0
+CTVEC vec=153 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=03e47cbec1837337 mmB=0 mmC=0
+CTVEC vec=154 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=d1120dc4dba65018 mmB=0 mmC=0
+CTVEC vec=155 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=53a9bb3b7fac7466 mmB=0 mmC=0
+CTVEC vec=156 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ed54257d47593168 mmB=0 mmC=0
+CTVEC vec=157 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=75790b896ea20442 mmB=0 mmC=0
+CTVEC vec=158 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=a8dfb2b363b8c4bf mmB=0 mmC=0
+CTVEC vec=159 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=d4c8077722eebb64 mmB=0 mmC=0
+CTVEC vec=160 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=14b9ddf3e86fade4 mmB=0 mmC=0
+CTVEC vec=161 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ad8dc53519b36750 mmB=0 mmC=0
+CTVEC vec=162 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=dd77ad9978a94b62 mmB=0 mmC=0
+CTVEC vec=163 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=1b635081a2606f1b mmB=0 mmC=0
+CTVEC vec=164 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=75867a69bf6c69fa mmB=0 mmC=0
+CTVEC vec=165 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=9883c9bcd7b9162b mmB=0 mmC=0
+CTVEC vec=166 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=f95d940203344e68 mmB=0 mmC=0
+CTVEC vec=167 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=5ad8762d609dc128 mmB=0 mmC=0
+CTVEC vec=168 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=6c7290c42b685d8e mmB=0 mmC=0
+CTVEC vec=169 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=70b04449447b5e1a mmB=0 mmC=0
+CTVEC vec=170 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=e4703211324d46a4 mmB=0 mmC=0
+CTVEC vec=171 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=764f8d2108c21cd5 mmB=0 mmC=0
+CTVEC vec=172 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=e905b7f51892013f mmB=0 mmC=0
+CTVEC vec=173 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=74fee27a9317d0de mmB=0 mmC=0
+CTVEC vec=174 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=c08b063c4efbe690 mmB=0 mmC=0
+CTVEC vec=175 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=dcbbfdd0b920f102 mmB=0 mmC=0
+CTVEC vec=176 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=9d47f21ceb405e88 mmB=0 mmC=0
+CTVEC vec=177 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=15831eb56f580f7a mmB=0 mmC=0
+CTVEC vec=178 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=c70c61e993266e28 mmB=0 mmC=0
+CTVEC vec=179 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=244f07c71e6c99fe mmB=0 mmC=0
+CTVEC vec=180 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=a21657a6114915bc mmB=0 mmC=0
+CTVEC vec=181 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=f3cf3ee62eab3eb3 mmB=0 mmC=0
+CTVEC vec=182 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=0096463c2aa098f8 mmB=0 mmC=0
+CTVEC vec=183 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=b54b7ed2e778bff4 mmB=0 mmC=0
+CTVEC vec=184 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=59a9697e57e77bf7 mmB=0 mmC=0
+CTVEC vec=185 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ab52389f1000c8ec mmB=0 mmC=0
+CTVEC vec=186 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ed9ad7c3f4d43850 mmB=0 mmC=0
+CTVEC vec=187 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=15ac65775034ac66 mmB=0 mmC=0
+CTVEC vec=188 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=7d7031b1dff8bebf mmB=0 mmC=0
+CTVEC vec=189 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=d5aa5e3ffe1a743a mmB=0 mmC=0
+CTVEC vec=190 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ed7031bae5af4740 mmB=0 mmC=0
+CTVEC vec=191 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=9992229331c01941 mmB=0 mmC=0
+CTVEC vec=192 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=969bd75507ac31c9 mmB=0 mmC=0
+CTVEC vec=193 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=4922eddc7fbe79c7 mmB=0 mmC=0
+CTVEC vec=194 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ce159935e63042b9 mmB=0 mmC=0
+CTVEC vec=195 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=dc9d763b8ad1a2f3 mmB=0 mmC=0
+CTVEC vec=196 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=6ed36fd398387368 mmB=0 mmC=0
+CTVEC vec=197 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=a7da304c5633f8f9 mmB=0 mmC=0
+CTVEC vec=198 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=eea50ca2183a9205 mmB=0 mmC=0
+CTVEC vec=199 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=d7a0040fd5f77eac mmB=0 mmC=0
+CTVEC vec=200 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=afe6d4fba7c3ea4f mmB=0 mmC=0
+CTVEC vec=201 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=3c7ac4b0d6760a24 mmB=0 mmC=0
+CTVEC vec=202 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=14caf007e71a62d0 mmB=0 mmC=0
+CTVEC vec=203 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=35a5819374dc857b mmB=0 mmC=0
+CTVEC vec=204 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=8cc782bb1cb103a5 mmB=0 mmC=0
+CTVEC vec=205 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=79eefb7c33aa53e9 mmB=0 mmC=0
+CTVEC vec=206 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=93b1da68117b6eac mmB=0 mmC=0
+CTVEC vec=207 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=5468d36286bd3530 mmB=0 mmC=0
+CTVEC vec=208 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=e7ec40501beaf418 mmB=0 mmC=0
+CTVEC vec=209 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=c9f7cd650a30f399 mmB=0 mmC=0
+CTVEC vec=210 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=9061dce2da821405 mmB=0 mmC=0
+CTVEC vec=211 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=9c0d476ec43395e6 mmB=0 mmC=0
+CTVEC vec=212 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=0d96321855c08dbf mmB=0 mmC=0
+CTVEC vec=213 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=8b7781a93df10331 mmB=0 mmC=0
+CTVEC vec=214 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=4247bb5740c32b66 mmB=0 mmC=0
+CTVEC vec=215 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=d0b436a4a87741e8 mmB=0 mmC=0
+CTVEC vec=216 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=84636aa81708c2bf mmB=0 mmC=0
+CTVEC vec=217 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=6764c5dc981a4444 mmB=0 mmC=0
+CTVEC vec=218 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=00537661aafa3306 mmB=0 mmC=0
+CTVEC vec=219 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=97b2d482682d1e75 mmB=0 mmC=0
+CTVEC vec=220 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=13e3768b526d5bcc mmB=0 mmC=0
+CTVEC vec=221 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=aaf0e121250295cf mmB=0 mmC=0
+CTVEC vec=222 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ffb666ebadc51e33 mmB=0 mmC=0
+CTVEC vec=223 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=c51c551e5633b2b1 mmB=0 mmC=0
+CTVEC vec=224 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ee4b20478499827c mmB=0 mmC=0
+CTVEC vec=225 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=7e20841ef7ced880 mmB=0 mmC=0
+CTVEC vec=226 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=6cb78d2998717299 mmB=0 mmC=0
+CTVEC vec=227 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=a44605975d8321ec mmB=0 mmC=0
+CTVEC vec=228 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=7fcb6813b9a367b6 mmB=0 mmC=0
+CTVEC vec=229 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=61795249bb20db75 mmB=0 mmC=0
+CTVEC vec=230 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=ff720cf3ccd0f6ce mmB=0 mmC=0
+CTVEC vec=231 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=bfedd67827ba8664 mmB=0 mmC=0
+CTVEC vec=232 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=0eeed34c234d81ef mmB=0 mmC=0
+CTVEC vec=233 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=eeba8701ca40a213 mmB=0 mmC=0
+CTVEC vec=234 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=3cf8fcf57bb3c0c5 mmB=0 mmC=0
+CTVEC vec=235 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=62af03f072f8a58d mmB=0 mmC=0
+CTVEC vec=236 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=5b9801ce81d64f5f mmB=0 mmC=0
+CTVEC vec=237 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=b36008dc5b4ff3a4 mmB=0 mmC=0
+CTVEC vec=238 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=75704419f6282087 mmB=0 mmC=0
+CTVEC vec=239 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=06764941f9ebbe09 mmB=0 mmC=0
+CTVEC vec=240 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=6391be1c1448ee40 mmB=0 mmC=0
+CTVEC vec=241 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=e459ac51b549c72c mmB=0 mmC=0
+CTVEC vec=242 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=41ecd975c22231be mmB=0 mmC=0
+CTVEC vec=243 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=bc8cc4f616c0b93e mmB=0 mmC=0
+CTVEC vec=244 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=31a0d6bca8666b38 mmB=0 mmC=0
+CTVEC vec=245 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=1cce1ef9ee47e879 mmB=0 mmC=0
+CTVEC vec=246 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=f6b89fe199b95f44 mmB=0 mmC=0
+CTVEC vec=247 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=9959446196a1f5b3 mmB=0 mmC=0
+CTVEC vec=248 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=b93f641d2a6b2a12 mmB=0 mmC=0
+CTVEC vec=249 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=6341dc9453e222fc mmB=0 mmC=0
+CTVEC vec=250 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=1831f5c939403806 mmB=0 mmC=0
+CTVEC vec=251 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=78d41160ea1e3209 mmB=0 mmC=0
+CTVEC vec=252 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=327f21947da26b82 mmB=0 mmC=0
+CTVEC vec=253 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=1565b25e48775e1e mmB=0 mmC=0
+CTVEC vec=254 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=b206bfd15a931301 mmB=0 mmC=0
+CTVEC vec=255 len=27269 hashB=ff1c3843f95bb4d5 hashC=f789ffc5d2787ca8 hashD=74d811587beda600 mmB=0 mmC=0
+CTRESULT design=ntt_core_baseline vectors=256 ref_len=27269 len_mismatch_vectors=0 control_mismatch_vectors=0 address_mismatch_vectors=0 data_register_differs_in=255
+$finish called at time : 71134756 ns : File "<repo>/tb/constant_time/tb_constant_time.v" Line 164
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:06 . Memory (MB): peak = 1332.336 ; gain = 0.000 ; free physical = 13030 ; free virtual = 26332
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Oct  1 17:44:14 2026...

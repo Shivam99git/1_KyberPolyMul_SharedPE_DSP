@@ -1,0 +1,80 @@
+{
+  "added_state": {
+    "declared_register_bits": {
+      "item_cnt": 9,
+      "k_base": 7,
+      "lfsr": 32,
+      "p_idx": 8,
+      "perm_stride": 8
+    },
+    "note": "counted from the RTL declarations; the mapped count is in the optional synthesis of the shuffled core",
+    "total_flip_flops": 64
+  },
+  "marginal_uniformity": {
+    "L=128": {
+      "max_count": 64,
+      "min_count": 64,
+      "uniform": true
+    },
+    "L=256": {
+      "max_count": 128,
+      "min_count": 128,
+      "uniform": true
+    }
+  },
+  "model": {
+    "cycles_before_done_state": [
+      27268
+    ],
+    "failures": 0,
+    "lfsr_seeds": [
+      "0xace12345",
+      "0x00000001",
+      "0xffffffff",
+      "0xdeadbeef",
+      "0x5a5a5a5a",
+      "0x13579bdf"
+    ],
+    "multiplier_issues": [
+      3584
+    ],
+    "runs": 650,
+    "status": "PASS",
+    "vectors": 50
+  },
+  "notation": "L = number of schedulable work items (128 per NTT/INTT layer and PWM, 256 for scaling)",
+  "rtl": {
+    "coefficients": 98304,
+    "cycles_max": 27269,
+    "cycles_min": 27269,
+    "distinct_seed_hashes": 6,
+    "mismatches": 0,
+    "runs": 384,
+    "runs_with_seed_trace_hash_change": 0,
+    "runs_with_wrong_issue_count": 0,
+    "status": "PASS"
+  },
+  "schedule_equivalence": {
+    "ntt_intt_start_stride_pairs_checked": 16384,
+    "pairs_not_a_bijection": 0,
+    "pairs_with_different_schedule": 0,
+    "pwm_scale_index_pairs_checked": 40960,
+    "status": "PASS",
+    "triples_per_transform": 896
+  },
+  "status": "PASS",
+  "tvla": {
+    "matched_control": {
+      "cycles_evaluated": 24192,
+      "max_abs_t": 73.25656020565131,
+      "n_above_threshold": 5530
+    },
+    "shuffled": {
+      "cycles_evaluated": 27266,
+      "expected_false_positives": 0.18528191083777928,
+      "max_abs_t": 6.344422903950318,
+      "n_above_threshold": 8,
+      "null_max_abs_t": 4.085112845854797
+    }
+  }
+}

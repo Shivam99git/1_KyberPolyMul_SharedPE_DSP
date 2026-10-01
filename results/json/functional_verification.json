@@ -1,0 +1,54 @@
+{
+  "known_answer_identities": {
+    "identity 1*g = g": "PASS",
+    "x^200*x^100 = -x^44": "PASS",
+    "x^255*x = -1": "PASS",
+    "zero 0*g = 0": "PASS"
+  },
+  "modulus_q": 3329,
+  "parameters": {
+    "barrett_K": 24,
+    "barrett_M": 5039,
+    "n_inv": 3303,
+    "status": "PASS",
+    "zeta": 17
+  },
+  "primary": {
+    "coefficients_checked": 65536,
+    "mismatches": 0,
+    "status": "PASS",
+    "tests": 256
+  },
+  "reference_model": {
+    "coefficients": 65536,
+    "multi_h_vs_schoolbook_mismatching_vectors": 0,
+    "ntt_model_vs_schoolbook_mismatching_vectors": 0,
+    "status": "PASS",
+    "vectors": 256
+  },
+  "ring": "Z_q[x]/(x^256+1)",
+  "rtl": {
+    "per_phase_baseline": {
+      "coefficients_checked": 65536,
+      "mismatches": 0,
+      "mismatching_vectors": 0,
+      "status": "PASS",
+      "tests": 256
+    },
+    "pipelined_barrett": {
+      "coefficients_checked": 65536,
+      "mismatches": 0,
+      "mismatching_vectors": 0,
+      "status": "PASS",
+      "tests": 256
+    },
+    "shared_pe": {
+      "coefficients_checked": 65536,
+      "mismatches": 0,
+      "mismatching_vectors": 0,
+      "status": "PASS",
+      "tests": 256
+    }
+  },
+  "status": "PASS"
+}

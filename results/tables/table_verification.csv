@@ -1,0 +1,5 @@
+Component,Reference,Test space,Result
+Barrett reduction,x mod q,"all 16,777,216 inputs",0 mism. (model); RTL PASS
+Polynomial product,schoolbook multiplication,"65,536 coeff.",0 mism.
+Known-answer identities,derived by hand,4 identities,all hold
+Control trajectory,reference trace (vector 0),"256 vec., 2 designs",identical

@@ -1,0 +1,24 @@
+{
+  "coefficients": 65536,
+  "cycles_first": 30853,
+  "cycles_max": 30853,
+  "cycles_min": 30853,
+  "design": "pipelined_barrett",
+  "experiment": "functional_pipelined",
+  "log": "reports/raw/sim/sim_functional_pipelined.log",
+  "mismatches": 0,
+  "pass": true,
+  "profile": {
+    "fwd_ntt": 16128,
+    "init_done": 5,
+    "inv_ntt": 8960,
+    "mult_issues": 3584,
+    "pwm": 3712,
+    "scaling": 2048,
+    "sum": 30853
+  },
+  "seconds": 0.0,
+  "source": "archived log",
+  "tool_exit_code": 0,
+  "vectors": 256
+}

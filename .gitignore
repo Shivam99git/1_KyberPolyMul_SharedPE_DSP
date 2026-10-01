@@ -1,0 +1,58 @@
+# Local research workspace and manuscript working copies (kept locally, not part of release)
+/Paper/
+/audit_20260923/
+/detailed_reverification/
+/review_2026-08-25/
+/verification_audit/
+/kyber-sharedpe-ntt-artifact/
+/1/
+/COUNTERMEASURE_IMPLEMENTATION.md
+/assemble.py
+/kyber_polymul_shared_dsp.v
+/model/
+/tcl/
+/tvla/
+/vectors/
+
+# Older flat RTL/testbench copies; the release uses the organized subdirectories.
+/rtl/*.v
+/rtl/*.vh
+/tb/*.v
+
+# Keep only the archived, scrubbed evidence and the generated-output placeholder.
+/reports/*
+!/reports/raw/
+!/reports/generated/
+
+# Tool and temporary outputs
+.Xil/
+build/
+vivado_projects/
+*.jou
+*.str
+*.pb
+*.wdb
+*.vcd
+*.vvp
+*.dcp
+*.backup.*
+xsim.dir/
+webtalk*
+hs_err_pid*
+__pycache__/
+*.pyc
+.cache/
+.venv/
+results/logs/*
+!results/logs/.gitkeep
+results/sim/
+results/tvla_raw/
+reports/generated/*
+!reports/generated/.gitkeep
+
+# Editors / operating systems
+*.swp
+*~
+.DS_Store
+.idea/
+.vscode/

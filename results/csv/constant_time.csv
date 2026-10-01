@@ -1,0 +1,4 @@
+design,vectors,latency_cycles,A_fixed_latency,B_invariant_control,C_invariant_address,D_data_registers_differ,unique_data_hashes,control_trace_hash,address_trace_hash
+shared_pe,256,27269,True,True,True,True,256,ff1c3843f95bb4d5,f789ffc5d2787ca8
+pipelined_barrett,256,30853,True,True,True,True,256,ce31767dd9812c55,05c0b77c64fb07a8
+per_phase_baseline,256,27269,True,True,True,True,256,ff1c3843f95bb4d5,f789ffc5d2787ca8

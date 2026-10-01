@@ -1,0 +1,10 @@
+{
+  "design": "shared_pe",
+  "experiment": "trace_shared",
+  "lines": 27269,
+  "log": "reports/raw/sim/sim_trace_shared.log",
+  "pass": true,
+  "seconds": 0.0,
+  "source": "archived log",
+  "tool_exit_code": 0
+}

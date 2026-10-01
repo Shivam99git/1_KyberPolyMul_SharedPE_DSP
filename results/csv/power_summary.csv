@@ -1,0 +1,23 @@
+design,run,role,period_ns,activity,confidence,nets_matched_pct,total_w_report,dynamic_w_report,static_w_report,total_mw_per_rail,dynamic_mw_per_rail,static_mw_per_rail
+shared_pe,t10p000,at_10ns,10.0,none (vectorless),Medium,,0.078,0.009,0.068,77.5048,9.0840,68.4208
+shared_pe,t13p061,closure_search,13.061,none (vectorless),Medium,,0.075,0.007,0.068,75.4038,6.9870,68.4168
+shared_pe,t13p418,closed,13.418,none (vectorless),Medium,,0.075,0.007,0.068,75.2178,6.8010,68.4168
+shared_pe,saif_t13p798,saif,13.798,SAIF,Medium,19.074778200253487,0.073,0.005,0.068,73.2060,4.7960,68.4100
+shared_pe,saifrand_t13p798,saif_random_stimulus,13.798,SAIF,Medium,19.074778200253487,0.074,0.006,0.068,74.1130,5.7000,68.4130
+shared_pe,vecless_t13p798,vecless_common,13.798,none (vectorless),Medium,,0.075,0.006,0.068,74.9048,6.4890,68.4158
+per_phase_baseline,t10p000,at_10ns,10.0,none (vectorless),Medium,,0.08,0.012,0.068,80.2408,11.8160,68.4258
+per_phase_baseline,t13p459,closure_search,13.459,none (vectorless),Medium,,0.077,0.009,0.068,77.1198,8.7000,68.4198
+per_phase_baseline,t13p601,closure_search,13.601,none (vectorless),Medium,,0.077,0.008,0.068,76.6658,8.2460,68.4188
+per_phase_baseline,t13p798,closed,13.798,none (vectorless),Medium,,0.077,0.008,0.068,76.8788,8.4590,68.4198
+per_phase_baseline,saif_t13p798,saif,13.798,SAIF,Medium,12.995049504950495,0.075,0.007,0.068,75.1978,6.7810,68.4168
+per_phase_baseline,saifrand_t13p798,saif_random_stimulus,13.798,SAIF,Medium,12.995049504950495,0.076,0.008,0.068,76.3708,7.9520,68.4188
+per_phase_baseline,vecless_t13p798,vecless_common,13.798,none (vectorless),Medium,,0.077,0.008,0.068,76.8788,8.4590,68.4198
+pipelined_barrett,t10p000,at_10ns,10.0,none (vectorless),Medium,,0.078,0.009,0.068,77.6088,9.1870,68.4208
+pipelined_barrett,t9p500,closure_search,9.5,none (vectorless),Medium,,0.078,0.01,0.068,78.2048,9.7820,68.4218
+pipelined_barrett,t9p300,closure_search,9.3,none (vectorless),Medium,,0.079,0.01,0.068,78.7098,10.2870,68.4228
+pipelined_barrett,t9p100,closure_search,9.1,none (vectorless),Medium,,0.079,0.01,0.068,78.5628,10.1400,68.4228
+pipelined_barrett,t8p900,closure_search,8.9,none (vectorless),Medium,,0.079,0.011,0.068,79.1918,10.7680,68.4238
+pipelined_barrett,t8p700,closure_search,8.7,none (vectorless),Medium,,0.08,0.011,0.068,79.5578,11.1330,68.4248
+pipelined_barrett,t8p500,closure_search,8.5,none (vectorless),Medium,,0.08,0.011,0.068,79.7628,11.3380,68.4248
+pipelined_barrett,t8p300,closed,8.3,none (vectorless),Medium,,0.08,0.012,0.068,80.2948,11.8700,68.4258
+pipelined_barrett,t8p100,closure_search,8.1,none (vectorless),Medium,,0.081,0.012,0.068,80.5678,12.1420,68.4258

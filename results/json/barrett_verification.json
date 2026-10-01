@@ -1,0 +1,36 @@
+{
+  "K": 24,
+  "M": 5039,
+  "constants_match_rtl_header": true,
+  "first_mismatch": null,
+  "max_input": 16777215,
+  "max_pre_correction_remainder": 5713,
+  "min_input": 0,
+  "min_pre_correction_remainder": 0,
+  "mismatches": 0,
+  "mismatches_in_multiplier_range": 0,
+  "multiplier_input_bound": 11075584,
+  "q": 3329,
+  "r1_fits_12_bits": true,
+  "rtl_simulation": {
+    "pipelined": {
+      "max_input": 16777215,
+      "max_pre_correction_remainder": 5713,
+      "min_input": 0,
+      "mismatches": 0,
+      "tested": 16777216
+    },
+    "primary": {
+      "max_input": 16777215,
+      "max_pre_correction_remainder": 5713,
+      "min_input": 0,
+      "mismatches": 0,
+      "tested": 16777216
+    },
+    "status": "PASS"
+  },
+  "single_correction_sufficient": true,
+  "status": "PASS",
+  "t_fits_13_bits": true,
+  "tested_inputs": 16777216
+}
