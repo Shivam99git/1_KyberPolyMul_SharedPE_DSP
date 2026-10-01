@@ -1,15 +1,27 @@
 # Reproducibility Report
 
-Generated: n/a  |  mode: `n/a`  |  arguments: ``
+Generated: 2026-10-01T13:31:42Z  |  mode: `full`  |  arguments: `--full`
 
 ## Environment
 
-- Python None (numpy None, scipy None, matplotlib None), None
-- Vivado (local): not found; manuscript results were generated with Vivado 2024.2
-- FPGA part: None  |  git commit: None
+- Python 3.12.3 (numpy 1.26.4, scipy 1.11.4, matplotlib 3.6.3), Linux 7.0.0
+- Vivado (local): vivado v2024.2 (64-bit); manuscript results were generated with Vivado 2024.2
+- FPGA part: xc7a35tcpg236-1  |  git commit: 88314143143e75f9b95ce16c217b3594b7def426
 
 | # | Stage | Status | Evidence | Seconds |
 |--:|---|---|---|--:|
+| 1 | Environment check | PASS | local | 1 |
+| 2 | Functional/reference-model verification | PASS | regenerated (python) | 1 |
+| 3 | Barrett exhaustive verification | PASS | regenerated (xsim) + python | 10 |
+| 4 | RTL simulation and cycle-count verification | PASS | regenerated (xsim) | 99 |
+| 5 | Constant-time/control-trace verification | PASS | regenerated (xsim) | 33 |
+| 6 | Shared-PE synthesis/implementation | PASS | regenerated (Vivado) | 122 |
+| 7 | Per-phase baseline synthesis/implementation | PASS | regenerated (Vivado) | 184 |
+| 8 | Pipelined-Barrett implementation | PASS | regenerated (Vivado) | 367 |
+| 9 | Resource/timing/power extraction | PASS | regenerated (Vivado) | 158 |
+| 10 | TVLA/masking/shuffling experiments | PASS | regenerated (python) | 594 |
+| 11 | Tables and figures | PASS | regenerated from results/ | 2 |
+| 12 | Manuscript-result consistency report | PASS | results/ | 0 |
 
 ## Functional Verification
 
@@ -44,7 +56,7 @@ Evidence: `results/csv/cycle_counts.csv`, `results/json/cycle_summary.json`.
 
 ## FPGA Resources
 
-**PASS** (53/53 checks against the manuscript pass) -- evidence: archived raw data (`reports/raw/vivado`), tool: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024.
+**PASS** (53/53 checks against the manuscript pass) -- evidence: regenerated in this run (`reports/generated/vivado`), tool: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024.
 
 | Design (10 ns, post-route) | LUT | LUT logic | LUT mem | FF | slices | DSP48E1 | BRAM |
 |---|--:|--:|--:|--:|--:|--:|--:|
@@ -56,7 +68,7 @@ Evidence: `results/csv/{resource,timing,power,hierarchy}_summary.csv`, `results/
 
 ## Timing
 
-**PASS** (45/45 checks against the manuscript pass) -- evidence: archived raw data (`reports/raw/vivado`), tool: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024.
+**PASS** (45/45 checks against the manuscript pass) -- evidence: regenerated in this run (`reports/generated/vivado`), tool: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024.
 
 | Design | WNS@10 ns | Fmax derived (MHz) | closed period (ns) | Fmax closed (MHz) | cycles | latency (us) |
 |---|--:|--:|--:|--:|--:|--:|
@@ -68,7 +80,7 @@ Evidence: `results/csv/{resource,timing,power,hierarchy}_summary.csv`, `results/
 
 ## Power
 
-**PASS** (14/14 checks against the manuscript pass) -- evidence: archived raw data (`reports/raw/vivado`), tool: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024.
+**PASS** (14/14 checks against the manuscript pass) -- evidence: regenerated in this run (`reports/generated/vivado`), tool: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024.
 
 | Design (10 ns vectorless) | dynamic (mW) | static (mW) | total (mW) | energy/op (uJ) |
 |---|--:|--:|--:|--:|
@@ -100,7 +112,7 @@ Evidence: `results/json/constant_time.json`, `results/csv/constant_time.csv`, `r
 
 ## TVLA
 
-**WARN** (22/26) -- simulated, register-level Hamming-distance model, fixed-vs-random Welch t-test, threshold |t| > 4.5; evidence: archived raw data (`data/tvla`).
+**WARN** (22/26) -- simulated, register-level Hamming-distance model, fixed-vs-random Welch t-test, threshold |t| > 4.5; evidence: regenerated in this run (`results/tvla_raw`).
 
 | Experiment | traces/group | samples | evaluated | max abs t | cycles above | expected by chance | null max abs t |
 |---|--:|--:|--:|--:|--:|--:|--:|
@@ -122,7 +134,7 @@ Evidence: `results/json/tvla_summary.json`, `results/csv/tvla_*.csv`, `results/f
 
 ## Masking
 
-**PASS** -- model: 250 masked products, failures 0; RTL core(f1,g)+core(f2,g)==core(f,g): PASS (64 vectors, mismatches 0); latency 2.00x.
+**PASS** -- model: 250 masked products, failures 0; RTL core(f1,g)+core(f2,g)==core(f,g): PASS (256 vectors, mismatches 0); latency 2.00x.
 
 TVLA of the masked protocol (400 traces/group): max|t| = 4.52, 1 of 48,384 cycles above threshold (chance 0.33), null max|t| 4.33. First-order protection under the evaluated register-level model only; higher-order and glitch-extended leakage are outside this experiment.
 
@@ -130,7 +142,7 @@ Evidence: `results/json/masking_verification.json`, `results/json/tvla_summary.j
 
 ## Shuffling
 
-**PASS** -- schedule equivalence over 16,384 (start, stride) pairs: 0 differ; model 650 runs, failures 0, cycles unchanged; RTL: PASS (384 runs, mismatches 0, latency 27269); permutation state 64 flip-flops (declared).
+**PASS** -- schedule equivalence over 16,384 (start, stride) pairs: 0 differ; model 650 runs, failures 0, cycles unchanged; RTL: PASS (1536 runs, mismatches 0, latency 27269); permutation state 64 flip-flops (declared).
 
 TVLA (400 traces/group): matched control max|t| 73.3 (5530 cycles above) -> shuffled max|t| 6.3 (8 of 27,266, chance 0.19). Shuffling is a hiding countermeasure: residual first-order leakage remains and its benefit depends on the trace count.
 

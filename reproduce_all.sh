@@ -113,7 +113,11 @@ end_stage() {
     if [ "$STAGE_FAIL" -gt 0 ]; then status="FAIL"; FAILED_STAGES=$((FAILED_STAGES + 1));
     elif [ "$STAGE_PASS" -eq 0 ] && [ "$STAGE_SKIP" -gt 0 ]; then status="SKIPPED"; fi
     local secs=$((SECONDS - STAGE_T0))
-    printf '%s\t%s\t%s\t%s\t%s\t%s\n' "$STAGE_N" "$STAGE_TITLE" "$status" "$secs" "$STAGE_EVID" "$STAGE_NOTE" >> "$STATUS_TSV"
+    if [ -n "$STAGE_NOTE" ]; then
+        printf '%s\t%s\t%s\t%s\t%s\t%s\n' "$STAGE_N" "$STAGE_TITLE" "$status" "$secs" "$STAGE_EVID" "$STAGE_NOTE" >> "$STATUS_TSV"
+    else
+        printf '%s\t%s\t%s\t%s\t%s\n' "$STAGE_N" "$STAGE_TITLE" "$status" "$secs" "$STAGE_EVID" >> "$STATUS_TSV"
+    fi
     echo "[$STAGE_N/12] $STAGE_TITLE: $status (${secs}s)"
 }
 

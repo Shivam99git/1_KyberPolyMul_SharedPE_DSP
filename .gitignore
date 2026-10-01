@@ -28,6 +28,9 @@
 .Xil/
 build/
 vivado_projects/
+clockInfo.txt
+*.log
+!reports/raw/sim/*.log
 *.jou
 *.str
 *.pb

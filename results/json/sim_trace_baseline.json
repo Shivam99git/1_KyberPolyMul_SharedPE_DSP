@@ -2,9 +2,9 @@
   "design": "per_phase_baseline",
   "experiment": "trace_baseline",
   "lines": 27269,
-  "log": "reports/raw/sim/sim_trace_baseline.log",
+  "log": "results/logs/sim_trace_baseline.log",
   "pass": true,
-  "seconds": 0.0,
-  "source": "archived log",
+  "seconds": 5.2,
+  "source": "simulation run",
   "tool_exit_code": 0
 }

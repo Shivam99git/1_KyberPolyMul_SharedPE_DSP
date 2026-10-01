@@ -1,17 +1,17 @@
 {
-  "coefficients": 98304,
+  "coefficients": 393216,
   "cycles_max": 27269,
   "cycles_min": 27269,
   "design": "shared_pe",
   "distinct_seed_hashes": 6,
   "experiment": "shuffled",
-  "log": "reports/raw/sim/sim_shuffled.log",
+  "log": "results/logs/sim_shuffled.log",
   "mismatches": 0,
   "pass": true,
-  "runs": 384,
+  "runs": 1536,
   "runs_with_seed_trace_hash_change": 0,
   "runs_with_wrong_issue_count": 0,
-  "seconds": 0.0,
+  "seconds": 55.1,
   "seed_hashes": {
     "00000001": "8f293f85dc8cc86e",
     "13579bdf": "005dd8839e070c16",
@@ -21,7 +21,7 @@
     "ffffffff": "b442bf5f17ce55a3"
   },
   "seeds": 6,
-  "source": "archived log",
+  "source": "simulation run",
   "tool_exit_code": 0,
-  "vectors_per_seed": 64
+  "vectors_per_seed": 256
 }

@@ -20,14 +20,14 @@
     "status": "PASS"
   },
   "rtl": {
-    "coefficients": 16384,
-    "invocations": 192,
+    "coefficients": 65536,
+    "invocations": 768,
     "latency_ratio": 2.0,
     "masked_latency_cycles": 54538,
     "mismatches_vs_golden": 0,
     "mismatches_vs_unmasked_core": 0,
     "status": "PASS",
-    "vectors": 64
+    "vectors": 256
   },
   "status": "PASS",
   "tvla": {

@@ -44,7 +44,8 @@ def src_of(path):
 
 def main():
     cons = j("manuscript_consistency.json")
-    meta = j("reproduction_metadata.json") or {}
+    meta_path = os.path.join(repo.RESULTS, "reproduction_metadata.json")
+    meta = repo.read_json(meta_path) if os.path.exists(meta_path) else {}
     env = meta.get("environment", {})
     L = ["# Reproducibility Report", "",
          f"Generated: {meta.get('generated_utc', 'n/a')}  |  mode: `{meta.get('mode', 'n/a')}`  |  arguments: `{meta.get('command_line_arguments', '')}`", ""]

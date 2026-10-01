@@ -106,7 +106,7 @@
       "threshold": 4.5
     }
   },
-  "moments_dir": "data/tvla",
+  "moments_dir": "results/tvla_raw",
   "multi_secret": {
     "multi_baseline": {
       "max_abs_t_range": [

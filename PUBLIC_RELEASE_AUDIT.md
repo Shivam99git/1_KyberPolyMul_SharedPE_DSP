@@ -1,6 +1,6 @@
 # Public Release Audit
 
-Audit date: 2026-10-01 (local reproducibility checks)
+Audit date: 2026-10-01 (Vivado 2024.2 full reproduction)
 
 ## Repository contents and scope
 
@@ -56,30 +56,38 @@ before publishing if project policy requires it.
 
 ## Validation performed
 
-- `./reproduce_all.sh --from-reports`: PASS, completed in 178 seconds; 200 consistency checks
-  passed, four warned, none failed. Functional results: 256 multiplications and 65,536 output
-  coefficients per design, zero mismatches. Barrett: all 16,777,216 24-bit inputs, zero
-  mismatches. Cycle counts: 27,269 (shared and baseline), 30,853 (pipelined). Archived FPGA
-  evidence parsed successfully. Vivado reruns were skipped because Vivado is unavailable.
-- `./reproduce_all.sh --quick`: PASS, completed in 331 seconds; 200 consistency checks passed,
-  four warned, none failed. Deterministically regenerated TVLA moments matched the archived
-  shared-PE moments bit-for-bit. xsim and fresh Vivado stages were skipped because those tools
-  are unavailable; archived simulation evidence was checked.
-- `./reproduce_all.sh --full`: NOT RUN; Vivado/xsim are not installed in this environment.
-- README quick and report-only entry-point commands were executed. The full-mode command and
-  individual Vivado flows could not be run because the required tool is absent. Direct setup
-  commands containing placeholder clone/install paths are reviewer instructions, not local tests.
+- `./reproduce_all.sh --from-reports`: PASS in 178 seconds; 200 checks passed, four warned, none
+  failed. Functional results: 256 products and 65,536 output coefficients per design, zero
+  mismatches. Barrett: all 16,777,216 24-bit inputs, zero mismatches. Cycle counts: 27,269 (shared
+  and baseline), 30,853 (pipelined).
+- `./reproduce_all.sh --quick`: PASS in 331 seconds; 200 checks passed, four warned, none failed.
+  Regenerated shared-PE TVLA moments matched the archived file bit-for-bit.
+- `VIVADO_SETTINGS=<Vivado-install>/2024.2/settings64.sh ./reproduce_all.sh --full`: PASS in
+  1,572 seconds (26m12s) with Vivado/xsim 2024.2. All 12 stages passed. All 16 fresh Vivado report
+  runs parsed identically to archived evidence; nine regenerated TVLA moment files were
+  bit-identical to archives. Full-run consistency: 200 PASS, 4 WARN, 0 FAIL, 0 SKIPPED.
+- Fresh full-mode functional, Barrett, cycle-count, constant-time, masking, and shuffling RTL
+  simulations passed. Each functional core checked 256 products / 65,536 coefficients with zero
+  mismatches; RTL Barrett reducers checked all 2^24 inputs with zero mismatches.
+- Fresh Vivado used `xc7a35tcpg236-1` and release 2024.2. The three flows closed at 13.418 ns,
+  13.798 ns, and 8.300 ns. Resource, timing, and power checks passed.
 
 ## Numerical discrepancies and limitations
 
-Four TVLA consistency warnings remain. The expected manuscript range for five “independent fixed
-secrets” is max |t| 82.1–87.2 and 24.3–26.7% of cycles above threshold; the corrected experiment
-using five random fixed-secret polynomials generated max |t| 49.795–69.345 and 21.780–22.342%.
-The originally run constant-coefficient secret experiment reproduces the expected range. Both
-measurements and the source explanation are retained; neither expected nor generated values were
-substituted. See `docs/security_evaluation.md` and `results/REPRODUCIBILITY_REPORT.md`.
+Four TVLA checks in manuscript Sec. V-B warn. Expected → generated (difference): min max |t|,
+82.1 → 49.795347 (−32.304653); max max |t|, 87.2 → 69.345302 (−17.854698); minimum percentage
+above threshold, 24.3% → 21.779927% (−2.520073 percentage points); maximum, 26.7% → 22.342097%
+(−4.357903 percentage points). The manuscript says “five independent fixed secrets.” The
+corrected experiment creates five random fixed-secret polynomials and produces the generated
+range. The original experiment code recreated the same PRNG for each coefficient, yielding five
+constant-coefficient polynomials in `scripts/tvla/run_tvla.py`; that version reproduces the
+manuscript range (max |t| 82.048–87.230; 24.297–26.682%). Evidence is the expected-value checker
+row (`results/csv/manuscript_consistency.csv`),
+the two datasets in `results/json/tvla_summary.json`, and the analysis in
+`docs/security_evaluation.md`. The RTL and manuscript expectations were left unchanged.
 
-Full synthesis, place-and-route, power regeneration, and fresh RTL simulation require licensed
-Vivado 2024.2 and remain to be run in that environment. TVLA results are simulated register-level
-proxies; they do not establish physical side-channel immunity. Run full mode in a Vivado 2024.2
-environment before making claims based on newly generated FPGA implementation data.
+Vivado emitted out-of-context port partial-route and register set/reset-priority warnings; the
+flows completed without errors or critical warnings, and parsed metrics matched archived reports.
+TVLA results are simulated register-level proxies; they do not establish physical side-channel
+immunity. The manuscript source used for claim review remains a local working copy and is excluded
+from the public repository.

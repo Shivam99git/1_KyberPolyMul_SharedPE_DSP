@@ -1,6 +1,14 @@
 {
   "files": {
-    "main_shared_moments.npz": "identical"
+    "main_baseline_moments.npz": "identical",
+    "main_shared_moments.npz": "identical",
+    "masked_moments.npz": "identical",
+    "multi_baseline_moments.npz": "identical",
+    "multi_shared_moments.npz": "identical",
+    "multiconst_baseline_moments.npz": "identical",
+    "multiconst_shared_moments.npz": "identical",
+    "shuffle_off_moments.npz": "identical",
+    "shuffle_on_moments.npz": "identical"
   },
   "status": "PASS"
 }

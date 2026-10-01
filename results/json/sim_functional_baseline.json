@@ -5,7 +5,7 @@
   "cycles_min": 27269,
   "design": "per_phase_baseline",
   "experiment": "functional_baseline",
-  "log": "reports/raw/sim/sim_functional_baseline.log",
+  "log": "results/logs/sim_functional_baseline.log",
   "mismatches": 0,
   "pass": true,
   "profile": {
@@ -17,8 +17,8 @@
     "scaling": 1792,
     "sum": 27269
   },
-  "seconds": 0.0,
-  "source": "archived log",
+  "seconds": 9.3,
+  "source": "simulation run",
   "tool_exit_code": 0,
   "vectors": 256
 }

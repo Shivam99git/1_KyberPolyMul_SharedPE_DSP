@@ -4528,6 +4528,6 @@
       "vecless_common": "vecless_t13p798"
     }
   },
-  "reports_dir": "reports/raw/vivado",
+  "reports_dir": "reports/generated/vivado",
   "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024"
 }

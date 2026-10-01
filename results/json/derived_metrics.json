@@ -291,6 +291,6 @@
   },
   "source": {
     "tool": "Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024",
-    "vivado_results": "reports/raw/vivado"
+    "vivado_results": "reports/generated/vivado"
   }
 }

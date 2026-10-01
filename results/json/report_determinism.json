@@ -1,0 +1,72 @@
+{
+  "details": {
+    "per_phase_baseline/t10p000": {
+      "differences": {},
+      "identical": true
+    },
+    "per_phase_baseline/t13p459": {
+      "differences": {},
+      "identical": true
+    },
+    "per_phase_baseline/t13p601": {
+      "differences": {},
+      "identical": true
+    },
+    "per_phase_baseline/t13p798": {
+      "differences": {},
+      "identical": true
+    },
+    "pipelined_barrett/t10p000": {
+      "differences": {},
+      "identical": true
+    },
+    "pipelined_barrett/t8p100": {
+      "differences": {},
+      "identical": true
+    },
+    "pipelined_barrett/t8p300": {
+      "differences": {},
+      "identical": true
+    },
+    "pipelined_barrett/t8p500": {
+      "differences": {},
+      "identical": true
+    },
+    "pipelined_barrett/t8p700": {
+      "differences": {},
+      "identical": true
+    },
+    "pipelined_barrett/t8p900": {
+      "differences": {},
+      "identical": true
+    },
+    "pipelined_barrett/t9p100": {
+      "differences": {},
+      "identical": true
+    },
+    "pipelined_barrett/t9p300": {
+      "differences": {},
+      "identical": true
+    },
+    "pipelined_barrett/t9p500": {
+      "differences": {},
+      "identical": true
+    },
+    "shared_pe/t10p000": {
+      "differences": {},
+      "identical": true
+    },
+    "shared_pe/t13p061": {
+      "differences": {},
+      "identical": true
+    },
+    "shared_pe/t13p418": {
+      "differences": {},
+      "identical": true
+    }
+  },
+  "runs_compared": 16,
+  "runs_with_differences": 0,
+  "same_vivado_release": true,
+  "status": "PASS"
+}

@@ -1,7 +1,7 @@
 {
   "design": "common",
   "experiment": "barrett",
-  "log": "reports/raw/sim/sim_barrett.log",
+  "log": "results/logs/sim_barrett.log",
   "pass": true,
   "pipelined": {
     "max_input": 16777215,
@@ -17,7 +17,7 @@
     "mismatches": 0,
     "tested": 16777216
   },
-  "seconds": 0.0,
-  "source": "archived log",
+  "seconds": 9.3,
+  "source": "simulation run",
   "tool_exit_code": 0
 }

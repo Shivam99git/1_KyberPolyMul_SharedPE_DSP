@@ -44,12 +44,12 @@
   },
   "notation": "L = number of schedulable work items (128 per NTT/INTT layer and PWM, 256 for scaling)",
   "rtl": {
-    "coefficients": 98304,
+    "coefficients": 393216,
     "cycles_max": 27269,
     "cycles_min": 27269,
     "distinct_seed_hashes": 6,
     "mismatches": 0,
-    "runs": 384,
+    "runs": 1536,
     "runs_with_seed_trace_hash_change": 0,
     "runs_with_wrong_issue_count": 0,
     "status": "PASS"

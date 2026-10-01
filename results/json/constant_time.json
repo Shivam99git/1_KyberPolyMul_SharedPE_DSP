@@ -8,7 +8,7 @@
       "address_trace_hash": "f789ffc5d2787ca8",
       "control_trace_hash": "ff1c3843f95bb4d5",
       "latency_cycles": 27269,
-      "source": "archived log",
+      "source": "simulation run",
       "unique_data_hashes": 256,
       "vectors": 256
     },
@@ -20,7 +20,7 @@
       "address_trace_hash": "05c0b77c64fb07a8",
       "control_trace_hash": "ce31767dd9812c55",
       "latency_cycles": 30853,
-      "source": "archived log",
+      "source": "simulation run",
       "unique_data_hashes": 256,
       "vectors": 256
     },
@@ -32,7 +32,7 @@
       "address_trace_hash": "f789ffc5d2787ca8",
       "control_trace_hash": "ff1c3843f95bb4d5",
       "latency_cycles": 27269,
-      "source": "archived log",
+      "source": "simulation run",
       "unique_data_hashes": 256,
       "vectors": 256
     }

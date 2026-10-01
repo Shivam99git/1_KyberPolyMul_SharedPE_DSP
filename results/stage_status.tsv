@@ -1,12 +1,12 @@
-1	Environment check	PASS	0	local	
-2	Functional/reference-model verification	PASS	4	regenerated (python)	
-3	Barrett exhaustive verification	PASS	1	not run + python	RTL simulation (barrett): required tool unavailable (xvlog/xsim not in PATH); use --from-reports or install Vivado 2024.2
-4	RTL simulation and cycle-count verification	PASS	0	not run	RTL simulation (masking): required tool unavailable (xvlog/xsim not in PATH); use --from-reports or install Vivado 2024.2
-5	Constant-time/control-trace verification	PASS	0	not run	RTL simulation (constant_time_shared,constant_time_pipelined,constant_time_baseline): required tool unavailable (xvlog/xsim not in PATH); use --from-reports or install Vivado 2024.2
-6	Shared-PE synthesis/implementation	SKIPPED	0	archived reports (reports/raw/vivado)	Vivado synthesis/implementation: not run in --quick mode; archived reports under reports/raw/vivado are parsed instead
-7	Per-phase baseline synthesis/implementation	SKIPPED	1	archived reports (reports/raw/vivado)	Vivado synthesis/implementation: not run in --quick mode; archived reports under reports/raw/vivado are parsed instead
-8	Pipelined-Barrett implementation	SKIPPED	0	archived reports (reports/raw/vivado)	Vivado synthesis/implementation: not run in --quick mode; archived reports under reports/raw/vivado are parsed instead
-9	Resource/timing/power extraction	PASS	0	archived reports (reports/raw/vivado)	
-10	TVLA/masking/shuffling experiments	PASS	323	archived raw data (data/tvla) re-analysed	RTL simulation (trace_shared,trace_baseline): required tool unavailable (xvlog/xsim not in PATH); use --from-reports or install Vivado 2024.2
-11	Tables and figures	PASS	2	regenerated from results/	
-12	Manuscript-result consistency report	PASS	0	results/	
+1	Environment check	PASS	1	local
+2	Functional/reference-model verification	PASS	1	regenerated (python)
+3	Barrett exhaustive verification	PASS	10	regenerated (xsim) + python
+4	RTL simulation and cycle-count verification	PASS	99	regenerated (xsim)
+5	Constant-time/control-trace verification	PASS	33	regenerated (xsim)
+6	Shared-PE synthesis/implementation	PASS	122	regenerated (Vivado)
+7	Per-phase baseline synthesis/implementation	PASS	184	regenerated (Vivado)
+8	Pipelined-Barrett implementation	PASS	367	regenerated (Vivado)
+9	Resource/timing/power extraction	PASS	158	regenerated (Vivado)
+10	TVLA/masking/shuffling experiments	PASS	594	regenerated (python)
+11	Tables and figures	PASS	2	regenerated from results/
+12	Manuscript-result consistency report	PASS	0	results/
