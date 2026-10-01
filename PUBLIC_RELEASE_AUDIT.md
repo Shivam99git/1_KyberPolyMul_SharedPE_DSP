@@ -19,6 +19,11 @@ The optional GitHub Actions workflow is not included in the published tree: the 
 GitHub token does not have the `workflow` scope required to push workflow files. The local
 reproduction script remains the validated entry point.
 
+Published as a public repository at
+`https://github.com/Shivam99git/1_KyberPolyMul_SharedPE_DSP` on branch `main`. The initial
+commit author and committer use the project owner's GitHub noreply identity. After the push,
+GitHub's contributors endpoint listed only `Shivam99git`.
+
 ## Reproduction commands and dependencies
 
 Single entry point: `./reproduce_all.sh`, with `--quick`, `--full`, `--from-reports`, and `--clean`.
@@ -77,5 +82,5 @@ substituted. See `docs/security_evaluation.md` and `results/REPRODUCIBILITY_REPO
 Full synthesis, place-and-route, power regeneration, and fresh RTL simulation require licensed
 Vivado 2024.2 and remain to be run in that environment. TVLA results are simulated register-level
 proxies; they do not establish physical side-channel immunity. The repository has no configured
-Git remote and no commits yet, so GitHub publication and the existing contributor list could not be
-verified here.
+local review workflow for Vivado reruns; perform those before making claims based on newly generated
+FPGA implementation data.

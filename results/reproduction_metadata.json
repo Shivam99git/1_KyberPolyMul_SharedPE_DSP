@@ -2,7 +2,7 @@
   "command_line_arguments": "--quick",
   "environment": {
     "fpga_part": "xc7a35tcpg236-1",
-    "git_commit": "unavailable (not a git checkout)",
+    "git_commit": "7a4eb21b18a5c9a485d8c8cea299d6bc37657e13",
     "matplotlib": "3.6.3",
     "numpy": "1.26.4",
     "os": "Linux 7.0.0",
@@ -13,7 +13,7 @@
     "xsim": "not found"
   },
   "fpga_part": "xc7a35tcpg236-1",
-  "generated_utc": "2026-10-01T12:53:21Z",
+  "generated_utc": "2026-10-01T12:57:21Z",
   "manuscript_tool_version": "Vivado 2024.2",
   "mode": "quick",
   "seeds": {
