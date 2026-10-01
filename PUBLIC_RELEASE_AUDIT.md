@@ -81,6 +81,5 @@ substituted. See `docs/security_evaluation.md` and `results/REPRODUCIBILITY_REPO
 
 Full synthesis, place-and-route, power regeneration, and fresh RTL simulation require licensed
 Vivado 2024.2 and remain to be run in that environment. TVLA results are simulated register-level
-proxies; they do not establish physical side-channel immunity. The repository has no configured
-local review workflow for Vivado reruns; perform those before making claims based on newly generated
-FPGA implementation data.
+proxies; they do not establish physical side-channel immunity. Run full mode in a Vivado 2024.2
+environment before making claims based on newly generated FPGA implementation data.
